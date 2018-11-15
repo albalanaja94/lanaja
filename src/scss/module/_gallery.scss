@@ -1,0 +1,59 @@
+@import "_recipes";
+@import "_variables";
+
+
+.node--type-galeria {
+  .field--name-field-multimedia {
+    max-width: $maxWidth;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 0;
+    width: 100%;
+
+    >.field__item {
+      display: inline-block;
+      font-size: 14px;
+      width: 33.33%;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+
+      >.media--view-mode-gallery-colorbox {
+        overflow: hidden;
+        border: 2px solid $corporativoPrincipal;
+        transition: all 0.5s ease-in-out;
+
+        .field__item {
+          line-height: 0;
+        }
+
+        img {
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+
+        &:hover {
+          border-color: $corporativoSecundario;
+        }
+      }
+    }
+  }
+  .more-link{
+  	max-width: $maxWidth;
+  	margin: 0 auto;
+  	text-align: right;
+  	padding: 0 20px;
+  }
+}
+
+
+.field--name-field-galeria {
+  .field__label {
+    @include title();
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,124 @@
+@import "_recipes";
+@import "_variables";
+
+.menu--social-networks {
+  margin-top: 15px;
+  ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: right;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 8px;
+
+      a {
+        font-size: 0;
+        color: transparent;
+        text-decoration: none;
+        display: block;
+        &:before {
+        	transition: all 0.5s ease-in-out;
+          @include icomoon(20px);
+          background-color: $corporativoPrincipal;
+          color: $white;
+          padding: 8px;
+          border-radius: 5px;
+          display: block;
+          margin-bottom: 15px;
+        }
+
+        &.fb {
+          &:before {
+            content: "\e90c";
+          }
+        }
+
+        &.tw {
+          &:before {
+            content: "\e90a";
+          }
+        }
+
+        &.ig {
+          &:before {
+            content: "\e90b";
+          }
+        }
+
+        &.yt {
+          &:before {
+            content: "\e907";
+          }
+        }
+
+        &:hover {
+          &:before {
+            background-color: $corporativoSecundario;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//SHARETHIS
+
+.sharethis-wrapper{
+  margin: 20px 0;
+}
+
+.st_facebook_large{
+  .stLarge{
+    &:before{
+       content: "\e90c";
+    }
+  }
+}
+
+.st_twitter_large{
+  .stLarge{
+    &:before{
+      content: "\e90a";
+    }
+  }
+}
+
+.st_linkedin_large{
+  .stLarge{
+    &:before{
+      content: "\e90d";
+    }
+  }
+}
+
+.st_email_large{
+  .stLarge{
+    &:before{
+      content: "\e90e";
+    }
+  }
+}
+
+.stLarge{
+  background-image:none !important;
+  width:36px !important;
+  &:before{
+    transition: all 0.5s ease-in-out;
+    @include icomoon(20px);
+    background-color: $corporativoPrincipal;
+    color: $white;
+    padding: 8px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 15px;
+  }
+   &:hover {
+    &:before {
+      background-color: $corporativoSecundario;
+    }
+  }
+}

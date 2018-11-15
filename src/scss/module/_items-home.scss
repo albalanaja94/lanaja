@@ -1,0 +1,45 @@
+@import "_recipes";
+@import "_variables";
+
+.field--name-field-items {
+  background-color: $corporativoPrincipal;
+  text-align: center;
+  >.field__item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 11%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    margin-left: -4px;
+    a {
+      font-size: 0;
+      position: absolute;
+      top: 0;
+	    bottom: 0;
+	    right: 0;
+	    left: 0;
+    }
+    .field--name-field-imagen{
+    	img{
+		    max-height: 90px;
+   			width: auto;
+    	}
+    }
+    .field--name-field-titulo {
+      font-family: $regular;
+      font-size: 25px;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: -1px;
+      margin-top: 46px;
+      min-height: 50px;
+    }
+    &:hover{
+    	background-color: #752ffb;
+    }
+  }
+  > .field__item:last-child{border:0;}
+}

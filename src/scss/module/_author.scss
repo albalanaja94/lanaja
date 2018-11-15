@@ -1,0 +1,24 @@
+@import "_recipes";
+@import "_variables";
+
+.field--name-node-author {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+	border-left: 1px solid $corporativoSecundario;
+	margin-left: 10px;
+	.field__label{
+		@include body();
+		@include bold();
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.field__item{
+		@include date();
+		display: inline-block;
+		vertical-align: middle;
+		color: $corporativoPrincipal;
+		font-family: $regular;
+	}
+}
+

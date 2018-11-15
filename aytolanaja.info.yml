@@ -1,0 +1,20 @@
+name: Aytolanaja
+type: theme
+description: "Tema custom de drupal 8 para el ayuntamiento de Lanaja"
+core: 8.x
+package: custom
+version: 1.0
+base theme: classy
+
+regions:
+  header_top: "Header top"
+  header_top_two: "Header top Two"
+  header_bottom: "Header bottom"
+  breadcrumb: "Breadcrumb"
+  content: "Content"
+  footer_top: "Footer top"
+  footer_bottom: "Footer bottom"
+  disabled: "Región oculta"
+
+libraries:
+  - aytolanaja/base

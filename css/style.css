@@ -1,0 +1,2849 @@
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.field--name-body {
+  margin-top: 30px; }
+  .field--name-body h3 {
+    font-size: 20px;
+    line-height: 1.1em; }
+
+p, ul, li, ol {
+  font-family: "barlow-regular", Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.3em;
+  text-align: justify;
+  margin-top: 0; }
+
+li {
+  padding-bottom: 10px; }
+
+strong {
+  font-family: "barlow-bold", Arial, sans-serif;
+  font-weight: normal; }
+
+.contextual-links {
+  display: none !important; }
+
+h3 {
+  margin: 0;
+  font-family: "barlow-semibold", Arial, sans-serif;
+  font-size: 28px;
+  color: #2c2c2c;
+  padding-bottom: 20px;
+  text-transform: uppercase; }
+
+.field--name-field-blog h2 {
+  margin: 0;
+  font-family: "barlow-semibold", Arial, sans-serif;
+  font-size: 28px;
+  color: #2c2c2c;
+  padding-bottom: 20px;
+  text-transform: uppercase; }
+
+h1 {
+  font-family: "barlow-bold", Arial, sans-serif;
+  font-size: 42px;
+  margin: 70px 0 50px;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  text-align: center; }
+  h1:after {
+    content: ' ';
+    height: 3px;
+    width: 200px;
+    background-color: #8c7aae;
+    display: block;
+    margin: 25px auto; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.region-header-bottom {
+  background-color: #152033;
+  background-color: rgba(21, 32, 51, 0.85); }
+
+.top {
+  max-width: 1060px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #FFFFFF;
+  font-size: 0;
+  padding-top: 10px; }
+  .top > div {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    font-size: 12px; }
+    .top > div.region-header-top-two {
+      text-align: right; }
+
+.page-node-type-cover .region-header-bottom {
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  right: 0; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+footer .region-footer-top {
+  background-image: url("../images/footer.png");
+  padding: 20px 0 50px;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+  footer .region-footer-top > div {
+    max-width: 900px;
+    margin: 0 auto; }
+
+footer .field--name-body {
+  margin-top: 0; }
+
+.menu--footer .menu {
+  margin: 15px auto;
+  padding: 5px 80px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: table;
+  width: 100%;
+  max-width: 900px; }
+  .menu--footer .menu li {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 0 0 5px;
+    box-sizing: border-box; }
+    .menu--footer .menu li a {
+      font-family: "barlow-semibold", Arial, sans-serif;
+      text-transform: uppercase;
+      color: #2c2c2c;
+      font-size: 15px;
+      text-decoration: none; }
+      .menu--footer .menu li a:after {
+        content: '|';
+        padding-left: 5px; }
+  .menu--footer .menu li:last-child a:after {
+    content: none; }
+
+#block-logos p img.align-left {
+  max-height: 75px;
+  margin-top: -10px; }
+
+#block-logos p img.align-right {
+  max-width: 80px;
+  margin-left: 20px; }
+
+footer .menu--main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; }
+  footer .menu--main ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 25px;
+    margin-top: 25px; }
+    footer .menu--main ul li {
+      display: inline-block;
+      vertical-align: top;
+      width: 25%;
+      text-align: center; }
+      footer .menu--main ul li span, footer .menu--main ul li a {
+        color: #FFFFFF !important;
+        font-size: 17px;
+        text-decoration: none; }
+      footer .menu--main ul li ul {
+        border-top: 0;
+        padding-top: 0;
+        margin-top: 0; }
+        footer .menu--main ul li ul li {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px; }
+          footer .menu--main ul li ul li a {
+            font-family: "barlow-regular", Arial, sans-serif;
+            transition: all 0.5s ease-in-out; }
+            footer .menu--main ul li ul li a:hover {
+              color: #8c7aae !important; }
+          footer .menu--main ul li ul li:last-child {
+            display: block; }
+      footer .menu--main ul li.menu-item--expanded > span {
+        text-transform: uppercase;
+        font-family: "barlow-bold", Arial, sans-serif;
+        font-size: 24px;
+        display: block;
+        margin-bottom: 25px; }
+      footer .menu--main ul li:last-child {
+        display: none; }
+
+.region-footer-bottom {
+  background-color: #8c7aae; }
+  .region-footer-bottom > div {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px 0;
+    font-family: "barlow-regular", Arial, sans-serif; }
+    .region-footer-bottom > div p {
+      margin: 0; }
+    .region-footer-bottom > div a {
+      color: #FFFFFF;
+      text-decoration: none; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+main {
+  overflow: hidden; }
+
+.node--type-cover .group-left {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 0;
+  padding: 70px 0; }
+  .node--type-cover .group-left > div {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px; }
+    .node--type-cover .group-left > div.fiestas {
+      width: 73%;
+      padding-right: 35px;
+      box-sizing: border-box; }
+    .node--type-cover .group-left > div.sugerencias {
+      width: 27%; }
+
+.node.node--view-mode-full:not(.node--type-cover) > .group-left {
+  max-width: 1060px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: table;
+  width: 100%;
+  float: none; }
+  .node.node--view-mode-full:not(.node--type-cover) > .group-left > div {
+    display: table-cell;
+    vertical-align: top;
+    width: 75%;
+    padding-right: 20px; }
+    .node.node--view-mode-full:not(.node--type-cover) > .group-left > div.right-content, .node.node--view-mode-full:not(.node--type-cover) > .group-left > div.group-right {
+      width: 25%;
+      padding-right: 0;
+      padding-left: 20px;
+      padding-top: 48px; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+header .menu--main {
+  max-width: 1060px;
+  margin: 0 auto;
+  width: 100%; }
+  header .menu--main > ul {
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    header .menu--main > ul li {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0; }
+      header .menu--main > ul li a,
+      header .menu--main > ul li span {
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding: 24px 10px;
+        font-size: 20px;
+        font-family: "barlow-regular", Arial, sans-serif;
+        display: block;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out; }
+        header .menu--main > ul li a:hover,
+        header .menu--main > ul li span:hover {
+          color: #8c7aae; }
+      header .menu--main > ul li span {
+        cursor: pointer; }
+      header .menu--main > ul li.menu-item--expanded {
+        position: relative; }
+        header .menu--main > ul li.menu-item--expanded > span:after {
+          content: '+';
+          padding-left: 5px; }
+        header .menu--main > ul li.menu-item--expanded.open > span:after {
+          content: '-';
+          padding-left: 5px; }
+        header .menu--main > ul li.menu-item--expanded .menu {
+          display: none;
+          position: absolute;
+          background-color: #152033;
+          background-color: rgba(21, 32, 51, 0.85);
+          left: 0;
+          right: 0;
+          margin: 0; }
+          header .menu--main > ul li.menu-item--expanded .menu li {
+            display: block;
+            padding: 10px; }
+            header .menu--main > ul li.menu-item--expanded .menu li a {
+              padding: 0;
+              text-transform: initial;
+              color: #FFFFFF;
+              font-size: 18px;
+              padding-left: 5px;
+              border-left: 3px solid transparent;
+              transition: all 0.5s ease-in-out; }
+              header .menu--main > ul li.menu-item--expanded .menu li a:hover {
+                border-left: 3px solid white;
+                color: #FFFFFF; }
+    header .menu--main > ul > li:last-child {
+      width: 10%; }
+      header .menu--main > ul > li:last-child a {
+        background-color: #8c7aae;
+        padding: 10px 15px 10px 40px;
+        border-radius: 10px;
+        background-image: url("../images/red-de-contactos-sociales.png");
+        background-position: center left 14px;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out; }
+        header .menu--main > ul > li:last-child a:hover, header .menu--main > ul > li:last-child a.is-active {
+          color: #FFFFFF;
+          background-color: #8c7aae;
+          background-color: rgba(140, 122, 174, 0.6); }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.menu--links-top {
+  text-align: right; }
+  .menu--links-top ul {
+    padding: 0;
+    margin: 0;
+    max-width: 530px;
+    font-size: 0; }
+    .menu--links-top ul li {
+      display: inline-block;
+      vertical-align: middle;
+      width: 45%;
+      box-sizing: border-box;
+      padding: 0px 7px; }
+      .menu--links-top ul li a {
+        color: #FFFFFF;
+        background-color: #2c2c2c;
+        font-size: 20px;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        text-align: right;
+        box-sizing: border-box;
+        padding: 10px;
+        font-family: "barlow-regular", Arial, sans-serif;
+        background-image: url("../images/icon.png");
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-position: center left 10px;
+        background-size: 28px;
+        transition: all 0.5s ease-in-out; }
+        .menu--links-top ul li a:hover {
+          opacity: 0.8; }
+    .menu--links-top ul li:last-child {
+      width: 55%; }
+      .menu--links-top ul li:last-child a {
+        padding-left: 45px;
+        background-color: #152033;
+        background-image: url("../images/nube-y-sol.png"); }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.menu--social-networks {
+  margin-top: 15px; }
+  .menu--social-networks ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: right; }
+    .menu--social-networks ul li {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 8px; }
+      .menu--social-networks ul li a {
+        font-size: 0;
+        color: transparent;
+        text-decoration: none;
+        display: block; }
+        .menu--social-networks ul li a:before {
+          transition: all 0.5s ease-in-out;
+          font-family: 'icomoon';
+          font-size: 20px;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          background-color: #8c7aae;
+          color: #FFFFFF;
+          padding: 8px;
+          border-radius: 5px;
+          display: block;
+          margin-bottom: 15px; }
+        .menu--social-networks ul li a.fb:before {
+          content: "\e90c"; }
+        .menu--social-networks ul li a.tw:before {
+          content: "\e90a"; }
+        .menu--social-networks ul li a.ig:before {
+          content: "\e90b"; }
+        .menu--social-networks ul li a.yt:before {
+          content: "\e907"; }
+        .menu--social-networks ul li a:hover:before {
+          background-color: #2c2c2c; }
+
+.sharethis-wrapper {
+  margin: 20px 0; }
+
+.st_facebook_large .stLarge:before {
+  content: "\e90c"; }
+
+.st_twitter_large .stLarge:before {
+  content: "\e90a"; }
+
+.st_linkedin_large .stLarge:before {
+  content: "\e90d"; }
+
+.st_email_large .stLarge:before {
+  content: "\e90e"; }
+
+.stLarge {
+  background-image: none !important;
+  width: 36px !important; }
+  .stLarge:before {
+    transition: all 0.5s ease-in-out;
+    font-family: 'icomoon';
+    font-size: 20px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #8c7aae;
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 15px; }
+  .stLarge:hover:before {
+    background-color: #2c2c2c; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.slick-prev {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  font-size: 0;
+  background: none;
+  border: none;
+  outline: none; }
+  .slick-prev:before {
+    content: "\e903";
+    font-family: 'icomoon';
+    font-size: 100px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #FFFFFF; }
+
+.slick-next {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  position: absolute;
+  font-size: 0;
+  background: none;
+  border: none;
+  outline: none; }
+  .slick-next:before {
+    content: "\e902";
+    font-family: 'icomoon';
+    font-size: 100px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #FFFFFF; }
+
+.slick__slide {
+  position: relative; }
+  .slick__slide .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0; }
+    .slick__slide .text > * {
+      max-width: 1060px;
+      width: 100%;
+      margin: 0 auto;
+      color: #FFFFFF;
+      font-size: 20px; }
+      .slick__slide .text > *.field--name-field-titulo {
+        font-family: "barlow-bold", Arial, sans-serif;
+        font-size: 64px;
+        margin-bottom: 10px; }
+      .slick__slide .text > *.field--name-field-subtitulo {
+        font-family: "barlow-regular", Arial, sans-serif;
+        font-size: 24px; }
+  .slick__slide:before {
+    content: '';
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+
+.slick {
+  position: relative; }
+  .slick img {
+    width: 100%; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.field--name-field-anuncio {
+  position: relative; }
+  .field--name-field-anuncio img {
+    width: 100%;
+    height: auto; }
+  .field--name-field-anuncio .field--name-field-link a {
+    position: absolute;
+    font-size: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #2c2c2c;
+    background-color: rgba(44, 44, 44, 0.4);
+    transition: all 0.5s ease-in-out; }
+    .field--name-field-anuncio .field--name-field-link a:hover {
+      background: transparent; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.field--name-field-items {
+  background-color: #8c7aae;
+  text-align: center; }
+  .field--name-field-items > .field__item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 11%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    margin-left: -4px; }
+    .field--name-field-items > .field__item a {
+      font-size: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0; }
+    .field--name-field-items > .field__item .field--name-field-imagen img {
+      max-height: 90px;
+      width: auto; }
+    .field--name-field-items > .field__item .field--name-field-titulo {
+      font-family: "barlow-regular", Arial, sans-serif;
+      font-size: 25px;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: -1px;
+      margin-top: 46px;
+      min-height: 50px; }
+    .field--name-field-items > .field__item:hover {
+      background-color: #752ffb; }
+  .field--name-field-items > .field__item:last-child {
+    border: 0; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.more-link {
+  text-align: left;
+  margin-top: 20px; }
+  .more-link a {
+    background-color: #2c2c2c;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "barlow-semibold", Arial, sans-serif;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    padding: 7px 10px 5px;
+    font-size: 20px; }
+    .more-link a:hover {
+      background-color: #8c7aae; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.node--type-galeria .field--name-field-multimedia {
+  max-width: 1060px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-size: 0;
+  width: 100%; }
+  .node--type-galeria .field--name-field-multimedia > .field__item {
+    display: inline-block;
+    font-size: 14px;
+    width: 33.33%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; }
+    .node--type-galeria .field--name-field-multimedia > .field__item > .media--view-mode-gallery-colorbox {
+      overflow: hidden;
+      border: 2px solid #8c7aae;
+      transition: all 0.5s ease-in-out; }
+      .node--type-galeria .field--name-field-multimedia > .field__item > .media--view-mode-gallery-colorbox .field__item {
+        line-height: 0; }
+      .node--type-galeria .field--name-field-multimedia > .field__item > .media--view-mode-gallery-colorbox img {
+        transition: all 0.5s ease-in-out; }
+        .node--type-galeria .field--name-field-multimedia > .field__item > .media--view-mode-gallery-colorbox img:hover {
+          transform: scale(1.2); }
+      .node--type-galeria .field--name-field-multimedia > .field__item > .media--view-mode-gallery-colorbox:hover {
+        border-color: #2c2c2c; }
+
+.node--type-galeria .more-link {
+  max-width: 1060px;
+  margin: 0 auto;
+  text-align: right;
+  padding: 0 20px; }
+
+.field--name-field-galeria .field__label {
+  font-family: "barlow-bold", Arial, sans-serif;
+  font-size: 42px;
+  margin: 70px 0 50px;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  text-align: center;
+  font-size: 32px; }
+  .field--name-field-galeria .field__label:after {
+    content: ' ';
+    height: 3px;
+    width: 200px;
+    background-color: #8c7aae;
+    display: block;
+    margin: 25px auto; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.breadcrumb {
+  max-width: 1060px;
+  margin: 30px auto 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-family: "barlow-regular", Arial, sans-serif; }
+  .breadcrumb a {
+    text-decoration: none;
+    color: #8c7aae;
+    transition: all 0.5s ease-in-out; }
+    .breadcrumb a:hover {
+      color: #8c7aae; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+#cboxWrapper {
+  border-radius: 0; }
+
+#cboxTitle {
+  font-family: "barlow-semibold", Arial, sans-serif;
+  color: #FFFFFF;
+  background-color: #2c2c2c;
+  background-color: rgba(44, 44, 44, 0.98);
+  padding: 10px 15px;
+  font-size: 16px;
+  text-shadow: none; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.field--name-field-fecha, .field--name-node-changed-date {
+  font-family: "barlow-light", Arial, sans-serif;
+  color: #2c2c2c;
+  font-style: italic;
+  display: inline-block;
+  vertical-align: middle; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.field--name-node-author {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  border-left: 1px solid #2c2c2c;
+  margin-left: 10px; }
+  .field--name-node-author .field__label {
+    font-family: "barlow-regular", Arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.3em;
+    text-align: justify;
+    margin-top: 0;
+    font-family: "barlow-bold", Arial, sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle; }
+  .field--name-node-author .field__item {
+    font-family: "barlow-light", Arial, sans-serif;
+    color: #2c2c2c;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: middle;
+    color: #8c7aae;
+    font-family: "barlow-regular", Arial, sans-serif; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.field--name-field-categoria-noticia {
+  margin: 25px 0; }
+  .field--name-field-categoria-noticia .field__item {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 15px; }
+    .field--name-field-categoria-noticia .field__item a {
+      background-color: #2c2c2c;
+      font-family: "barlow-bold", Arial, sans-serif;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 3px 10px;
+      font-size: 16px;
+      transition: all 0.5s ease-in-out; }
+      .field--name-field-categoria-noticia .field__item a:hover {
+        background-color: #8c7aae; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.field--name-field-tags {
+  font-size: 0;
+  padding-bottom: 30px; }
+  .field--name-field-tags .field__item {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 16px;
+    padding: 3px 5px; }
+    .field--name-field-tags .field__item a {
+      color: #8c7aae;
+      font-family: "barlow-regular", Arial, sans-serif;
+      text-decoration: none; }
+      .field--name-field-tags .field__item a:before {
+        content: '#';
+        color: #8c7aae;
+        font-family: "barlow-regular", Arial, sans-serif; }
+  .field--name-field-tags .field__item:nth-child(2n+2) {
+    font-size: 20px; }
+  .field--name-field-tags .field__item:nth-child(5n+5) {
+    font-size: 24px; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.field--name-comment {
+  max-width: 1060px;
+  margin: 0 auto 50px;
+  padding: 20px 30px; }
+  .field--name-comment h2 {
+    font-family: "barlow-bold", Arial, sans-serif;
+    font-size: 42px;
+    margin: 70px 0 50px;
+    text-transform: uppercase;
+    color: #2c2c2c;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0; }
+    .field--name-comment h2:after {
+      content: ' ';
+      height: 3px;
+      width: 200px;
+      background-color: #8c7aae;
+      display: block;
+      margin: 25px auto; }
+  .field--name-comment form.comment-form {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: "barlow-regular", Arial, sans-serif;
+    background-color: #8c7aae;
+    background-color: rgba(140, 122, 174, 0.4); }
+  .field--name-comment input[type='text'] {
+    outline: none;
+    background-color: transparent;
+    color: #000000;
+    border: 0;
+    border-bottom: 1px solid rgba(44, 44, 44, 0.55);
+    margin-left: 10px;
+    font-family: "barlow-regular", Arial, sans-serif; }
+  .field--name-comment label {
+    font-family: "barlow-bold", Arial, sans-serif; }
+  .field--name-comment .form-textarea-wrapper {
+    margin-top: 5px; }
+  .field--name-comment .filter-help {
+    display: none; }
+
+.button {
+  font-family: "barlow-bold", Arial, sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #2c2c2c;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+  padding: 5px 10px;
+  color: #FFFFFF;
+  background-color: #2c2c2c; }
+  .button:hover {
+    color: #2c2c2c;
+    background-color: #FFFFFF; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.scroll-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #2c2c2c;
+  border: 2px solid #FFFFFF;
+  display: none;
+  cursor: pointer; }
+  .scroll-to-top:before {
+    content: "\e901";
+    font-family: 'icomoon';
+    font-size: 40px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%); }
+  .scroll-to-top:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #2c2c2c; }
+    .scroll-to-top:hover:before {
+      color: #2c2c2c; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* ************* TIPO DE CONTENIDO FIESTAS */
+.field--name-field-fiestas > .field__item {
+  position: relative;
+  line-height: 0; }
+  .field--name-field-fiestas > .field__item .text {
+    position: absolute;
+    background-color: #8c7aae;
+    background-color: rgba(140, 122, 174, 0.9);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 65%;
+    line-height: 1.3em;
+    padding: 20px 25px;
+    color: #FFFFFF;
+    font-family: "barlow-regular", Arial, sans-serif;
+    font-size: 18px; }
+    .field--name-field-fiestas > .field__item .text h2 {
+      font-family: "barlow-semibold", Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: 26px; }
+    .field--name-field-fiestas > .field__item .text .field--name-field-categorias .field__item {
+      padding-bottom: 5px; }
+    .field--name-field-fiestas > .field__item .text .field--name-node-link a {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #1b1b1b;
+      font-family: "barlow-bold", Arial, sans-serif;
+      color: white;
+      text-decoration: none;
+      font-size: 35px;
+      padding: 10px 13px;
+      transition: all 0.5s ease-in-out; }
+      .field--name-field-fiestas > .field__item .text .field--name-node-link a:hover {
+        background: #2c2c2c; }
+
+.field--name-field-fiestas > .field__item:nth-child(2) .text {
+  background-color: #3b9bbe;
+  background-color: rgba(59, 155, 190, 0.9); }
+
+.field--name-field-fiestas > .field__item:last-child .text {
+  background-color: #891e1e;
+  background-color: rgba(137, 30, 30, 0.9); }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+#slick-node-1-noticias-full-2 {
+  background-color: #e4e4e4; }
+  #slick-node-1-noticias-full-2 > .slick__slider {
+    margin: 0; }
+  #slick-node-1-noticias-full-2 .slick__slide:before {
+    content: none; }
+  #slick-node-1-noticias-full-2 .slick-dots {
+    bottom: 5px;
+    right: 10px;
+    text-align: right;
+    max-width: 180px;
+    padding: 0;
+    margin: 0;
+    position: absolute; }
+    #slick-node-1-noticias-full-2 .slick-dots li {
+      margin: 0;
+      list-style: none;
+      display: inline-block;
+      padding: 0 3px; }
+      #slick-node-1-noticias-full-2 .slick-dots li button {
+        font-size: 0;
+        width: 16px;
+        border-radius: 100%;
+        height: 16px;
+        display: block;
+        background-color: #2c2c2c;
+        border: 0;
+        opacity: 0.7;
+        outline: none; }
+      #slick-node-1-noticias-full-2 .slick-dots li button:hover {
+        background-color: #8c7aae; }
+      #slick-node-1-noticias-full-2 .slick-dots li.slick-active button {
+        background-color: #8c7aae; }
+  #slick-node-1-noticias-full-2 .text-news {
+    padding: 0 15px 30px;
+    position: relative;
+    min-height: 216px; }
+    #slick-node-1-noticias-full-2 .text-news .field--name-node-title h2 {
+      font-family: "barlow-semibold", Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: 21px;
+      letter-spacing: 0.5px;
+      line-height: 1.3em; }
+    #slick-node-1-noticias-full-2 .text-news .field--name-body {
+      font-family: "barlow-regular", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.3em; }
+    #slick-node-1-noticias-full-2 .text-news .field--name-node-link a {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #1b1b1b;
+      font-family: "barlow-bold", Arial, sans-serif;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 10px 13px;
+      transition: all 0.5s ease-in-out; }
+      #slick-node-1-noticias-full-2 .text-news .field--name-node-link a:hover {
+        background: #2c2c2c; }
+
+.field--name-dynamic-block-fieldnode-related-news {
+  margin-bottom: 40px; }
+  .field--name-dynamic-block-fieldnode-related-news .field__label {
+    margin: 0;
+    font-family: "barlow-semibold", Arial, sans-serif;
+    font-size: 20px;
+    color: #2c2c2c;
+    padding-bottom: 20px;
+    text-transform: uppercase; }
+
+.node--type-noticias.node--view-mode-related {
+  border-bottom: 1px solid rgba(44, 44, 44, 0.45);
+  margin-bottom: 15px;
+  padding-bottom: 15px; }
+  .node--type-noticias.node--view-mode-related h2 {
+    margin: 0;
+    font-weight: normal;
+    margin-bottom: 15px;
+    line-height: 0.9em; }
+    .node--type-noticias.node--view-mode-related h2 a {
+      font-family: "barlow-bold", Arial, sans-serif;
+      font-size: 18px;
+      text-decoration: none;
+      color: #8c7aae;
+      transition: all 0.5s ease-in-out; }
+      .node--type-noticias.node--view-mode-related h2 a:hover {
+        color: #2c2c2c; }
+  .node--type-noticias.node--view-mode-related .field--name-field-fecha {
+    font-size: 14px;
+    font-family: "barlow-regular", Arial, sans-serif;
+    font-style: normal; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.field--name-field-blog {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 50px 0; }
+  .field--name-field-blog ul {
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+    font-size: 0; }
+    .field--name-field-blog ul li {
+      margin: 0;
+      font-size: 14px;
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 20px;
+      box-sizing: border-box; }
+    .field--name-field-blog ul li:nth-child(even) {
+      padding-left: 25px; }
+    .field--name-field-blog ul li:nth-child(odd) {
+      padding-right: 25px; }
+
+.node--type-article.node--view-mode-teaser {
+  position: relative; }
+  .node--type-article.node--view-mode-teaser .field--name-node-title img {
+    width: 100%; }
+  .node--type-article.node--view-mode-teaser .field--name-node-title h2 {
+    margin: 0;
+    padding: 0; }
+  .node--type-article.node--view-mode-teaser .field--name-node-title a {
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    left: 0;
+    color: #FFFFFF;
+    background-color: #2c2c2c;
+    background-color: rgba(44, 44, 44, 0.6);
+    font-family: "barlow-semibold", Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 15px;
+    line-height: 1.2em;
+    min-height: 96px;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out; }
+    .node--type-article.node--view-mode-teaser .field--name-node-title a:hover {
+      background-color: #2c2c2c;
+      background-color: #2c2c2c; }
+
+.node--type-article.node--view-mode-full .group-header {
+  position: relative; }
+  .node--type-article.node--view-mode-full .group-header h2 {
+    position: absolute;
+    font-size: 60px;
+    left: 120px;
+    bottom: 140px;
+    background: #FFFFFF;
+    padding: 10px 40px 10px 20px;
+    font-family: "barlow-bold", Arial, sans-serif;
+    text-transform: uppercase; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+.slick[id*='tablon-de-anuncios'] .slick__slide {
+  position: relative; }
+  .slick[id*='tablon-de-anuncios'] .slick__slide:before {
+    content: none; }
+  .slick[id*='tablon-de-anuncios'] .slick__slide .text-anuncio {
+    background-color: #2c2c2c;
+    background-color: rgba(44, 44, 44, 0.6);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 30px; }
+    .slick[id*='tablon-de-anuncios'] .slick__slide .text-anuncio h2 a {
+      font-family: "barlow-bold", Arial, sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 48px;
+      line-height: 1.1em; }
+    .slick[id*='tablon-de-anuncios'] .slick__slide .text-anuncio .field--name-body p {
+      font-family: "barlow-regular", Arial, sans-serif;
+      color: #FFFFFF;
+      font-size: 24px;
+      line-height: 1.3em; }
+
+.anuncios-title {
+  margin-bottom: 100px; }
+  .anuncios-title h3 {
+    text-align: center;
+    font-family: "barlow-bold", Arial, sans-serif;
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 20px; }
+
+/*# sourceMappingURL=style.css.map */

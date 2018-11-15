@@ -1,0 +1,67 @@
+@import "_recipes";
+@import "_variables";
+
+/* ************* TIPO DE CONTENIDO FIESTAS */
+
+.field--name-field-fiestas {
+  >.field__item {
+    position: relative;
+    line-height: 0;
+
+    .text {
+      position: absolute;
+      @include rgba-fallback(bg, $corporativoPrincipal, 0.9);
+      bottom: 0;
+      right: 0;
+      top: 0;
+      left: 65%;
+      line-height: 1.3em;
+      padding: 20px 25px;
+      color: $white;
+      font-family: $regular;
+      font-size: 18px;
+
+      h2 {
+        font-family: $semibold;
+        text-transform: uppercase;
+        font-size: 26px;
+      }
+
+      .field--name-field-categorias {
+        .field__item {
+          padding-bottom: 5px;
+        }
+      }
+
+      .field--name-node-link {
+        a {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background-color: #1b1b1b;
+          font-family: $bold;
+          color: white;
+          text-decoration: none;
+          font-size: 35px;
+          padding: 10px 13px;
+          transition:all 0.5s ease-in-out;
+          &:hover{
+          	background:$corporativoSecundario;
+          }
+        }
+      }
+    }
+  }
+
+  >.field__item:nth-child(2) {
+    .text {
+      @include rgba-fallback(bg, #3b9bbe, 0.9);
+    }
+  }
+
+  >.field__item:last-child {
+    .text {
+      @include rgba-fallback(bg, #891e1e, 0.9);
+    }
+  }
+}

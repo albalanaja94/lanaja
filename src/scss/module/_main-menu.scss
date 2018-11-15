@@ -1,0 +1,116 @@
+@import "_recipes";
+@import "_variables";
+
+header {
+  .menu--main {
+    max-width: $maxWidth;
+    margin: 0 auto;
+    width: 100%;
+
+    >ul {
+      display: table;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        display: table-cell;
+        vertical-align: middle;
+        padding:0;
+        a,
+        span {
+          color: $white;
+          text-transform: uppercase;
+          padding: 24px 10px;
+          font-size: 20px;
+          font-family: $regular;
+          display: block;
+          text-decoration: none;
+          transition: all 0.5s ease-in-out;
+
+          // &.is-active,
+          &:hover {
+            color: $corporativoPrincipal;
+            // color: $white;
+          }
+        }
+
+        span {
+          cursor: pointer;
+        }
+
+        &.menu-item--expanded {
+          position: relative;
+
+          >span {
+            &:after {
+              content: '+';
+              padding-left: 5px;
+            }
+          }
+
+          &.open {
+            >span {
+              &:after {
+                content: '-';
+                padding-left: 5px;
+              }
+            }
+          }
+
+          .menu {
+            display: none;
+            position: absolute;
+            // display: block;
+            @include rgba-fallback(bg, $blue, 0.85);
+            left: 0;
+            right: 0;
+            margin: 0;
+
+            li {
+              display: block;
+              padding: 10px;
+
+              a {
+                padding: 0;
+                text-transform: initial;
+                color: $white;
+                font-size: 18px;
+                padding-left: 5px;
+                border-left: 3px solid transparent;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                  border-left: 3px solid white;
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      >li:last-child {
+        width: 10%;
+
+        a {
+          background-color: $corporativoPrincipal;
+          padding: 10px 15px 10px 40px;
+          border-radius: 10px;
+          background-image: url('../images/red-de-contactos-sociales.png');
+          background-position: center left 14px;
+          background-repeat: no-repeat;
+          transition: all 0.5s ease-in-out;
+
+          &:hover,
+          &.is-active {
+            color: $white;
+            @include rgba-fallback(bg, $corporativoPrincipal, 0.6);
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,23 @@
+@import "_recipes";
+@import "_variables";
+
+.field--name-field-anuncio{
+	position:relative;
+	img{
+		width:100%;
+		height: auto;
+	}
+	.field--name-field-link{
+		a{
+			position: absolute;
+			font-size: 0;
+			left:0; right:0;
+			bottom:0; top:0;
+			@include rgba-fallback(bg, $corporativoSecundario, 0.4);
+			transition:all 0.5s ease-in-out;
+			&:hover{
+				background:transparent;
+			}
+		}
+	}
+}

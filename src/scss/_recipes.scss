@@ -1,0 +1,242 @@
+@import "bourbon/bourbon";
+@import "_variables";
+
+// * ****** @include icomoon(fa-camera-retro);**** */
+@mixin icomoon($size) {
+  font-family: 'icomoon'; font-size: $size;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+//* ***** OPACITY ***** */
+  @mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+  }
+
+  //* ********** FILTER GRADIENT **** */
+@mixin filter-gradient($start-color, $end-color, $orientation: vertical) {
+    $gradient-type: if($orientation == vertical, 0, 1);
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=#{$gradient-type}, startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}');
+}
+
+//* *********** box - shadow *** */
+@mixin box-shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
+
+//* *********** text - shadow *** */
+@mixin text-shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
+
+  // * ****** @include border-radius; **** */
+
+  @mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+      border-radius: $radius;
+}
+
+
+  // * ****** @include border-radius; **** */
+
+  @mixin border-top-left-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+    -moz-border-top-left-radius: $radius;
+    -ms-border-top-left-radius: $radius;
+      border-top-left-radius: $radius;
+}
+
+// * ****** @include f-size(14); **** */
+	@mixin f-size($value) {
+			font-size: $value + px;
+			font-size: $value/10 + rem;
+	}
+
+
+// * ****** @include icon(fontawesome, R);**** */
+	@mixin icon($font-name, $char) {
+		&:before {
+			content: $char;
+			font-family: $font-name;
+		}
+	}
+
+
+// *  ************************************************************************************************************************************************ ANIMATIONS / TRANSITIONS */
+	// @include keyframes(spin) {
+	//   0% { transform: rotate(0deg); }
+	//   100% { transform: rotate(359deg); }
+	// }
+
+	// .ajax-progress .throbber {
+	//   @include animation("spin 1.0s infinite linear");
+	// }
+
+	@mixin keyframes($animation-name) {
+		@-webkit-keyframes $animation-name { @content; }
+		@-moz-keyframes $animation-name { @content; }
+		@-ms-keyframes $animation-name { @content; }
+		@-o-keyframes $animation-name { @content; }
+		@keyframes $animation-name { @content; }
+	}
+
+	@mixin animation($str) {
+		-webkit-animation: #{$str};
+		-moz-animation: #{$str};
+		-ms-animation: #{$str};
+		-o-animation: #{$str};
+		animation: #{$str};
+	}
+
+
+// *  ************************************************************************************************************************************************ RGBA SUPPORT */
+	// * ****** @include rgba-fallback(color, #123456, 0.5);**** */
+	// * ****** @include rgba-fallback(bg, #654321, 0.6);**** */
+
+	@mixin rgba-fallback($type, $color, $percentage) {
+
+		$rgbRED: red($color);
+		$rgbGREEN: green($color);
+		$rgbBLUE: blue($color);
+
+		@if $type == color {
+				color: $color;
+				color: rgba($rgbRED, $rgbGREEN, $rgbBLUE, $percentage);
+		}
+		@if $type == bg {
+				background-color: $color;
+				background-color: rgba($rgbRED, $rgbGREEN, $rgbBLUE, $percentage);
+		}
+
+	}
+
+
+// *  ************************************************************************************************************************************************ BACKGROUND */
+	// * ****** @include bg-image(transparent, throbber, svg, no-repeat, center center, 25px auto);**** */
+	@mixin bg-image($color, $image_name, $image_ext, $repeat, $position, $size, $image_subfolder:'') {
+
+		$background_image_PNG: inline-image("../images/#{$image_subfolder}#{$image_name}.png");
+		$background_image: inline-image("../images/#{$image_subfolder}#{$image_name}.#{$image_ext}");
+
+		background: $background_image_PNG $repeat $position $color;
+		background: $background_image $repeat $position / $size $color;
+
+	}
+
+
+// *  ************************************************************************************************************************************************ ESTRUCTURA */
+	// * ****** @extend %clearfix; **** */
+		%clearfix {
+			*zoom: 1;
+			clear: both;
+			&:before, &:after { content: ""; display: table; }
+			&:after { clear: both; }
+		}
+
+	// * ****** @extend %inline_block; **** */
+		%inline_block {
+			display: inline-block;
+			*zoom: 1;
+			*display: inline;
+		}
+
+		%link_list {
+			line-height: 1.4;
+			padding: 0 0 0 15px;
+		}
+
+	// * ****** @extend %invisible; **** */
+		%invisible {
+			clip: rect(1px, 1px, 1px, 1px);
+			height: 1px;
+			overflow: hidden;
+			position: absolute !important;
+		}
+
+
+	// * ***** @include css3pie(25px 25px); **** */
+		@mixin css3pie($radio) {
+			overflow: hidden;
+			position: relative;
+			-moz-border-radius: $radio;
+			-webkit-border-radius: $radio;
+			border-radius: $radio;
+		  behavior: url("/profiles/clusters_public/themes/clusters_public_static/css/PIE.htc");
+		}
+
+	/* @include transparent($colorLink, 0.8); */
+	  @mixin transparent($color, $alpha) {
+	    $rgba: rgba($color, $alpha);
+	    $ie-hex-str: ie-hex-str($rgba);
+	    background-color: transparent;
+	    background-color: $rgba;
+	    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+	    zoom: 1;
+	  }
+
+//* ************************************************************** CALCULOS ***** */
+	//* ********** @include calc(width, 98%, "100% - 80px"); *** */
+		// @mixin calc($property, $default, $expression) {
+		//   #{$property}: $default;
+		//   #{$property}: -moz-calc(#{$expression});
+		//   #{$property}: -webkit-calc(#{$expression});
+		//   #{$property}: -o-calc(#{$expression});
+		//   #{$property}: calc(#{$expression});
+		// }
+		// @mixin calc($property, $default, $expression) {
+		//   #{$property}: -webkit-calc(#{$expression});
+		//   #{$property}: calc(#{$expression});
+		// }
+
+	//* ********** @include numLi(4); *** */
+		@mixin numLi($numli) {
+			width: (100% / $numli) - 0.5%;
+		}
+
+
+// * ************************************************************************************************************************************************ BREAKPOINTS */
+	$desktop_resolution: 		1050px;
+	$xxxlarge_resolution: 		1024px;
+	$xxlarge_resolution: 		960px;
+	$xlarge_resolution: 		800px;
+	$large_resolution: 		768px;
+	$medium_resolution: 		640px;
+	$small_resolution: 		480px;
+	$xsmall_resolution: 		360px;
+	$xxsmall_resolution: 		320px;
+
+	$desktop_breakpoint:		$desktop_resolution;
+	$xxlarge_breakpoint:		$xxxlarge_resolution - 1;
+	$xlarge_breakpoint:		$xxlarge_resolution;
+	$large_breakpoint:		$xlarge_resolution - 1;
+	$medium_breakpoint:	$large_resolution - 1;
+	$small_breakpoint:		$medium_resolution - 1;
+	$xsmall_breakpoint:		$small_resolution - 1;
+	$xxsmall_breakpoint:		$xsmall_resolution - 1;
+
+	$screen:	"screen" !default;
+
+	$desktop:	"#{$screen} and (max-width: #{$desktop_breakpoint})" !default;
+	$xxlarge:	"#{$screen} and (max-width: #{$xxlarge_breakpoint})" !default;
+	$xlarge:	"#{$screen} and (max-width: #{$xlarge_breakpoint})" !default;
+	$large:		"#{$screen} and (max-width: #{$large_breakpoint})" !default;
+	$medium:	"#{$screen} and (max-width: #{$medium_breakpoint})" !default;
+	$small:		"#{$screen} and (max-width: #{$small_breakpoint})" !default;
+	$xsmall:	"#{$screen} and (max-width: #{$xsmall_breakpoint})" !default;
+	$xxsmall:	"#{$screen} and (max-width: #{$xxsmall_breakpoint})" !default;

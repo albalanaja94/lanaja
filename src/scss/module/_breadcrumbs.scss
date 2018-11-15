@@ -1,0 +1,18 @@
+@import "_recipes";
+@import "_variables";
+
+.breadcrumb{
+	max-width: $maxWidth;
+	margin:30px auto 20px;
+	padding: 0 20px;
+	box-sizing:border-box;
+	font-family: $regular;
+	a{
+		text-decoration: none;
+		color: $corporativoPrincipal;
+		transition: all 0.5s ease-in-out;
+		&:hover{
+			color: $corporativoPrincipal;
+		}
+	}
+}

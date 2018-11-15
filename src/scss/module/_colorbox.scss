@@ -1,0 +1,13 @@
+@import "_recipes";
+@import "_variables";
+
+#cboxWrapper{border-radius: 0;}
+
+#cboxTitle{
+	font-family: $semibold;
+	color: $white;
+	@include rgba-fallback(bg, $corporativoSecundario, 0.98);
+	padding: 10px 15px;
+	font-size: 16px;
+	text-shadow:none;
+}

@@ -1,0 +1,56 @@
+@import "_recipes";
+@import "_variables";
+
+//* *********** TIPO DE CONTENIDO ANUNCIOS *** */
+
+.slick[id*='tablon-de-anuncios'] {
+  .slick__slide {
+    &:before {
+      content: none;
+    }
+
+    position: relative;
+
+    .text-anuncio {
+      @include rgba-fallback(bg, $corporativoSecundario, 0.6);
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      max-width: 50%;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 40px 30px;
+
+      h2 {
+        a {
+          font-family: $bold;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $white;
+          font-size: 48px;
+          line-height: 1.1em;
+        }
+      }
+      .field--name-body {
+      	p{
+      		font-family: $regular;
+      		color: $white;
+      		font-size: 24px;
+      		line-height: 1.3em;
+      	}
+      }
+    }
+  }
+}
+
+.anuncios-title {
+	margin-bottom: 100px;
+  h3 {
+    text-align: center;
+    font-family: $bold;
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,158 @@
+@import "_recipes";
+@import "_variables";
+
+footer {
+  .region-footer-top {
+    background-image: url('../images/footer.png');
+    padding: 20px 0 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    >div {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+  .field--name-body{margin-top: 0;}
+}
+
+
+//* ********* MENU SECUNDARIO ** */
+
+.menu--footer {
+  .menu {
+    margin: 15px auto;
+    padding: 5px 80px;
+    box-sizing: border-box;
+    background-color: $white;
+    border-radius: 10px;
+    display: table;
+    width: 100%;
+    max-width: 900px;
+
+    li {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0 0 0 5px;
+      box-sizing: border-box;
+
+      a {
+        font-family: $semibold;
+        text-transform: uppercase;
+        color: $corporativoSecundario;
+        font-size: 15px;
+        text-decoration: none;
+
+        &:after {
+          content: '|';
+          padding-left: 5px;
+        }
+      }
+    }
+
+    li:last-child {
+      a {
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+//* ********** LOGOS *** */
+#block-logos {
+  p {
+    img.align-left {
+      max-height: 75px;
+      margin-top: -10px;
+    }
+
+    img.align-right{
+      max-width: 80px;
+      margin-left: 20px;
+    }
+  }
+}
+
+
+//* ******* main menu footer  ** */
+
+footer{
+	.menu--main{
+		width:100%;
+		max-width: 900px;
+		margin:0 auto;
+		ul{
+			margin:0;
+			padding:0;
+			list-style: none;
+			font-size:0;
+			border-top: 1px solid $white;
+			padding-top: 25px;
+			margin-top: 25px;
+			li{
+				display: inline-block;
+				vertical-align: top;
+				width:25%;
+				text-align: center;
+				span, a{
+					color: $white !important;
+					font-size: 17px;
+					text-decoration: none;
+				}
+				ul{
+					border-top: 0;
+					padding-top: 0;
+					margin-top: 0;
+					li{
+						display: block;
+						width:100%;
+						margin-bottom: 10px;
+						a{
+							font-family: $regular;
+							transition: all 0.5s ease-in-out;
+							&:hover{
+								color: $corporativoPrincipal !important;
+							}
+						}
+						&:last-child {
+							display: block;
+						}
+					}
+				}
+				&.menu-item--expanded{
+					> span{
+						text-transform: uppercase;
+						font-family: $bold;
+						font-size: 24px;
+						display: block;
+						margin-bottom: 25px;
+					}
+				}
+				&:last-child{display: none;}
+			}
+		}
+	}
+}
+
+//* ************* FOOTER BOTTOM *** */
+	.region-footer-bottom{
+		background-color: $corporativoPrincipal;
+		 > div{
+		 	max-width: 1000px;
+		 	margin: 0 auto;
+		 	color: $white;
+		 	text-align: center;
+		 	font-size: 15px;
+		 	padding: 20px 0;
+		 	font-family: $regular;
+		 	p{
+		 		margin:0;
+		 	}
+		 	a{
+		 		color: $white;
+		 		text-decoration: none;
+		 	}
+		 }
+	}

@@ -1,0 +1,103 @@
+@import "_recipes";
+@import "_variables";
+
+
+@mixin title(){
+	font-family: $bold;
+	font-size: 42px;
+	margin: 70px 0 50px;
+	text-transform: uppercase;
+	color: $corporativoSecundario;
+	text-align: center;
+	&:after{
+		content: ' ';
+		height: 3px;
+		width: 200px;
+		background-color: $corporativoPrincipal;
+		display:block;
+		margin: 25px auto;
+	}
+}
+
+@mixin body(){
+	font-family: $regular;
+	font-size: 16px;
+	color: $black;
+	line-height: 1.3em;
+	text-align: justify;
+	margin-top: 0;
+}
+
+@mixin bold() {
+	font-family: $bold;
+	font-weight: normal;
+}
+
+@mixin date(){
+	font-family: $light;
+	color: $corporativoSecundario;
+	font-style: italic;
+}
+
+@mixin buttonOne(){
+	font-family: $bold;
+	text-transform: uppercase;
+	border: 1px solid $corporativoSecundario;
+	outline:none;
+	transition: all 0.5s ease-in-out;
+	padding:5px 10px;
+	color: $white;
+	background-color: $corporativoSecundario;
+	&:hover{
+		color: $corporativoSecundario;
+		background-color: $white;
+	}
+}
+
+.field--name-body{
+	margin-top: 30px;
+	h3{
+		font-size: 20px;
+		line-height: 1.1em;
+	}
+}
+
+p, ul, li, ol{
+	@include body();
+}
+
+li{
+	padding-bottom: 10px;
+}
+
+strong{
+	@include bold();
+}
+
+.contextual-links{
+	display: none !important;
+}
+
+h3{
+	margin:0;
+	font-family: $semibold;
+	font-size: 28px;
+	color: $corporativoSecundario;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.field--name-field-blog{
+	h2{
+		margin:0;
+		font-family: $semibold;
+		font-size: 28px;
+		color: $corporativoSecundario;
+		padding-bottom: 20px;
+		text-transform: uppercase;
+	}
+}
+
+h1{
+	@include title();
+}

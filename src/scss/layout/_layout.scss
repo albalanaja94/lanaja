@@ -1,0 +1,55 @@
+@import "_recipes";
+@import "_variables";
+
+
+//* ********* scroll lateral ** */
+main{overflow: hidden;}
+
+//* ************** TIPO DE CONTENIDO PORTADA*/
+.node--type-cover{
+	.group-left{
+		width:100%;
+		max-width: 980px;
+		margin:0 auto;
+		font-size: 0;
+		padding: 70px 0;
+		> div{
+			display: inline-block;
+			vertical-align: top;
+			font-size: 12px;
+			&.fiestas{
+				width:73%;
+				padding-right: 35px;
+				box-sizing:border-box;
+			}
+			&.sugerencias{
+				width:27%;
+			}
+		}
+	}
+}
+
+//* ************** OTHER CONTENT TYPES (NEWS, BLOG ETC) *** */
+.node.node--view-mode-full:not(.node--type-cover){
+	> .group-left{
+		max-width: $maxWidth;
+		margin:40px auto;
+		padding: 0 20px;
+		box-sizing:border-box;
+		display: table;
+		width:100%;
+		float:none;
+		> div{
+			display: table-cell;
+			vertical-align: top;
+			width: 75%;
+			padding-right: 20px;
+			&.right-content, &.group-right{
+				width:25%;
+				padding-right: 0;
+				padding-left: 20px;
+				padding-top: 48px;
+			}
+		}
+	}
+}

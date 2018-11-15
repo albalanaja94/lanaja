@@ -1,0 +1,35 @@
+@import "_recipes";
+@import "_variables";
+
+.region-header-bottom {
+  @include rgba-fallback(bg, $blue, 0.85);
+}
+
+.top {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  width: 100%;
+  background-color: $white;
+  font-size: 0;
+  padding-top: 10px;
+
+  >div {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    font-size: 12px;
+
+    &.region-header-top-two {
+      text-align: right;
+    }
+  }
+}
+
+.page-node-type-cover {
+  .region-header-bottom {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    right: 0;
+  }
+}

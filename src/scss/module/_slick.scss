@@ -1,0 +1,90 @@
+@import "_recipes";
+@import "_variables";
+
+
+.slick-prev {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  font-size: 0;
+  background: none;
+  border: none;
+  outline: none;
+
+  &:before {
+    content: "\e903";
+    @include icomoon(100px);
+    color: $white;
+  }
+}
+
+.slick-next {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  position: absolute;
+  font-size: 0;
+  background: none;
+  border: none;
+  outline: none;
+
+  &:before {
+    content: "\e902";
+    @include icomoon(100px);
+    color: $white;
+  }
+}
+
+.slick__slide {
+  position: relative;
+
+  .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+
+    >* {
+      max-width: $maxWidth;
+      width: 100%;
+      margin: 0 auto;
+      color: $white;
+      font-size: 20px;
+
+      &.field--name-field-titulo {
+        font-family: $bold;
+        font-size: 64px;
+        margin-bottom: 10px;
+      }
+
+      &.field--name-field-subtitulo {
+        font-family: $regular;
+        font-size: 24px;
+      }
+    }
+  }
+
+  &:before {
+    content: '';
+    @include rgba-fallback(bg, $black, 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.slick {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}

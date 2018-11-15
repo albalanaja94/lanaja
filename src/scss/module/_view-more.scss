@@ -1,0 +1,22 @@
+@import "_recipes";
+@import "_variables";
+
+//* ********* VIEW MORE LINK *** */
+
+.more-link {
+  text-align: left;
+  margin-top: 20px;
+  a {
+    background-color: $corporativoSecundario;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $semibold;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    padding: 7px 10px 5px;
+    font-size: 20px;
+    &:hover {
+      background-color: $corporativoPrincipal;
+    }
+  }
+}

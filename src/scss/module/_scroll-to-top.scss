@@ -1,0 +1,29 @@
+@import "_recipes";
+@import "_variables";
+
+.scroll-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: $corporativoSecundario;
+  border: 2px solid $white;
+  display: none;
+  cursor:pointer;
+  &:before {
+    content: "\e901";
+    @include icomoon(40px);
+    color: $white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%)translateY(-50%);  }
+  &:hover{
+  	background-color: $white;
+  	border: 2px solid $corporativoSecundario;
+  	&:before{
+  		color: $corporativoSecundario;
+  	}
+  }
+}

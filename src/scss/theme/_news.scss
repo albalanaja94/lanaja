@@ -1,0 +1,139 @@
+@import "_recipes";
+@import "_variables";
+
+
+//* ********** SLIDER HOME *** */
+#slick-node-1-noticias-full-2 {
+  >.slick__slider {
+    margin: 0;
+  }
+
+  background-color: #e4e4e4;
+
+  .slick__slide:before {
+    content: none;
+  }
+
+  .slick-dots {
+    bottom: 5px;
+    right: 10px;
+    text-align: right;
+    max-width: 180px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+
+    li {
+      margin: 0;
+      list-style: none;
+      display: inline-block;
+      padding: 0 3px;
+      button {
+        font-size: 0;
+        width: 16px;
+        border-radius: 100%;
+        height: 16px;
+        display: block;
+        background-color: $corporativoSecundario;
+        border: 0;
+        opacity: 0.7;
+        outline:none;
+      }
+
+      button:hover {
+        background-color: $corporativoPrincipal;
+
+      }
+
+      &.slick-active {
+        button {
+          background-color: $corporativoPrincipal;
+        }
+      }
+    }
+  }
+
+  .text-news {
+    padding: 0 15px 30px;
+    position: relative;
+    min-height: 216px;
+
+    .field--name-node-title {
+      h2 {
+        font-family: $semibold;
+        text-transform: uppercase;
+        font-size: 21px;
+        letter-spacing: 0.5px;
+        line-height: 1.3em;
+      }
+    }
+
+    .field--name-body {
+      font-family: $regular;
+      font-size: 14px;
+      line-height: 1.3em;
+    }
+
+    .field--name-node-link {
+      a {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #1b1b1b;
+        font-family: $bold;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px 13px;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          background: $corporativoSecundario;
+        }
+      }
+    }
+  }
+}
+
+
+//* ********** SIDEBAR RIGHT * * */
+.field--name-dynamic-block-fieldnode-related-news{
+  margin-bottom: 40px;
+  .field__label{
+    margin:0;
+    font-family: $semibold;
+    font-size: 20px;
+    color: $corporativoSecundario;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+}
+.node--type-noticias {
+  &.node--view-mode-related{
+    border-bottom: 1px solid rgba(44, 44, 44, 0.45);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    h2{
+      margin: 0;
+      font-weight: normal;
+      margin-bottom: 15px;
+      line-height: 0.9em;
+      a{
+        font-family: $bold;
+        font-size: 18px;
+        text-decoration: none;
+        color: $corporativoPrincipal;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+          color: $corporativoSecundario;
+        }
+      }
+    }
+    .field--name-field-fecha{
+      font-size: 14px;
+      font-family: $regular;
+      font-style: normal;
+    }
+  }
+}
+

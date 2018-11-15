@@ -1,0 +1,37 @@
+//* ***** BASE
+	@import 'base/_typography.scss';
+
+//* ***** LAYOUT
+	@import 'layout/_header.scss';
+	@import 'layout/_footer.scss';
+	@import 'layout/_layout.scss';
+
+//* ***** MODULES
+	@import 'module/_main-menu.scss';
+	@import 'module/_links-top.scss';
+	@import 'module/_social-networks.scss';
+	@import 'module/_slick.scss';
+	@import 'module/_anuncio.scss';
+	@import 'module/_items-home.scss';
+	@import 'module/_view-more.scss';
+	@import 'module/_gallery.scss';
+	@import 'module/_breadcrumbs.scss';
+	@import 'module/_colorbox.scss';
+	@import 'module/_date.scss';
+	@import 'module/_author.scss';
+	@import 'module/_categories.scss';
+	@import 'module/_tags.scss';
+	@import 'module/_comments.scss';
+	@import 'module/_scroll-to-top.scss';
+
+
+//* ***** STATE
+
+//* ***** THEME
+	@import 'theme/_fiestas.scss';
+	@import 'theme/_news.scss';
+	@import 'theme/_blog.scss';
+	@import 'theme/_anuncios.scss';
+
+
+

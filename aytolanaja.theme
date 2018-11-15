@@ -1,0 +1,221 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the winvictus theme.
+ */
+
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function aytolanaja_preprocess_html(array &$variables) {
+  /* Add class to html tag */
+  // $variables['html_attributes']->addClass('no-js');
+  // Don't display the site name twice on the front page
+  // (and potentially others)
+  /*if (
+  isset($variables['head_title_array']['title']) &&
+  isset($variables['head_title_array']['name']) &&
+  ($variables['head_title_array']['title'] ==
+  $variables['head_title_array']['name'])) {
+  $variables['head_title'] = $variables['head_title_array']['name'];
+  }*/
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if($node) {
+    $variables['attributes']['class'][] = 'node-' . $node->id();
+  }
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function aytolanaja_page_attachments_alter(array &$page) {
+  // Tell IE to use latest rendering engine (not to use compatibility mode).
+  /*$ie_edge = [
+  '#type' => 'html_tag',
+  '#tag' => 'meta',
+  '#attributes' => [
+  'http-equiv' => 'X-UA-Compatible',
+  'content' => 'IE=edge',
+  ],
+  ];
+  $page['#attached']['html_head'][] = [$ie_edge, 'ie_edge'];*/
+  $page['#attached']['drupalSettings']['widthBreakpoint'] = 379;
+}
+
+/**
+ * Implements hook_preprocess_page() for page.html.twig.
+ */
+function aytolanaja_preprocess_page(array &$variables) {
+
+}
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function aytolanaja_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  $path_args = explode('/', trim(\Drupal::service('path.current')->getPath(), '/'));
+  $suggestions = theme_get_suggestions($path_args, 'page');
+  $http_error_suggestions = [
+    'system.401' => 'page__401',
+    'system.403' => 'page__403',
+    'system.404' => 'page__404',
+  ];
+
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if (isset($http_error_suggestions[$route_name])) {
+    $suggestions[] = $http_error_suggestions[$route_name];
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_node_alter().
+ */
+function aytolanaja_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+  /*$node = $variables['elements']['#node'];
+
+  if ($variables['elements']['#view_mode'] == "full") {
+
+  }*/
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for Block document templates.
+ */
+function aytolanaja_preprocess_block(array &$variables) {
+
+}
+
+/**
+ * Implements hook_theme_suggestions_field_alter().
+ */
+function aytolanaja_theme_suggestions_field_alter(array &$suggestions, array $variables) {
+  /*$element = $variables['element'];
+  $suggestions[] = 'field__' . $element['#view_mode'];
+  $suggestions[] = 'field__' . $element['#view_mode'] . '__' . $element['#field_name'];*/
+}
+
+/**
+ * Implements hook_theme_suggestions_field_alter().
+ */
+function aytolanaja_theme_suggestions_fieldset_alter(array &$suggestions, array $variables) {
+  /*$element = $variables['element'];
+  if (
+  isset($element['#attributes']['class']) &&
+  in_array('form-composite', $element['#attributes']['class'])) {
+  $suggestions[] = 'fieldset__form_composite';
+  }*/
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function aytolanaja_preprocess_node(array &$variables) {
+  // Default to turning off byline/submitted.
+  // $variables['display_submitted'] = FALSE;.
+}
+
+/**
+ * Implements hook_theme_suggestions_views_view_alter().
+ */
+function aytolanaja_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
+
+}
+
+/**
+ * Implements hook_preprocess_form().
+ */
+function aytolanaja_preprocess_form(array &$variables) {
+  // $variables['attributes']['novalidate'] = 'novalidate';.
+}
+
+/**
+ * Implements hook_preprocess_select().
+ */
+function aytolanaja_preprocess_select(array &$variables) {
+  // $variables['attributes']['class'][] = 'select-chosen';.
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function aytolanaja_preprocess_field(array &$variables, $hook) {
+  /*switch ($variables['element']['#field_name']) {
+  }*/
+}
+
+/**
+ * Implements hook_preprocess_details().
+ */
+function aytolanaja_preprocess_details(array &$variables) {
+  /*$variables['attributes']['class'][] = 'details';
+  $variables['summary_attributes']['class'] = 'summary';*/
+}
+
+/**
+ * Implements hook_theme_suggestions_details_alter().
+ */
+function aytolanaja_theme_suggestions_details_alter(array &$suggestions, array $variables) {
+
+}
+
+/**
+ * Implements hook_preprocess_menu_local_task().
+ */
+function aytolanaja_preprocess_menu_local_task(array &$variables) {
+  /*$variables['element']['#link']['url']->setOption('attributes',
+  ['class'=>'rounded']);*/
+}
+
+
+/**
+ * Implements hook_form_user_login_form_alter().
+ */
+function aytolanaja_form_user_login_form_alter(&$form) {
+    $form['new_password'] = array(
+      '#type' => 'markup',
+      '#markup' => '<div class="forget_password"><a href="/user/password" data-drupal-link-system-path="user/password">'.t('Request new password').'</a></div>',
+      '#weight' => +97,
+    );
+    $form['new_account'] = array(
+      '#type' => 'markup',
+      '#markup' => '<div class="new_account"><a href="/user/register" data-drupal-link-system-path="user/register">'.t('Create new account').'</a></div>',
+      '#weight' => +98,
+    );
+    $form['login_with_facebook'] = array(
+        '#type' => 'markup',
+        '#markup' => '<div class="login-facebook"><a href="/user/login/facebook" title="'.t('Login with facebook').'">'.t('Login with facebook').'</a></div>',
+        '#weight' => +94,
+    );
+    $form['login_with_twitter'] = array(
+        '#type' => 'markup',
+        '#markup' => '<div class="login-twitter"><a href="/user/login/twitter"  title="'.t('Login with twitter').'">'.t('Login with twitter').'</a></div>',
+        '#weight' => +95,
+    );
+    $form['login_with_google'] = array(
+        '#type' => 'markup',
+        '#markup' => '<div class="login-google"><a href="/user/login/google"  title="'.t('Login with google').'">'.t('Login with google').'</a></div>',
+        '#weight' => +96,
+    );
+}
+
+function aytolanaja_preprocess_image_formatter(&$variables) {
+    $current_path = \Drupal::service('path.current')->getPath();
+    $alias = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
+    if($alias == '/pronosticos-y-tipsters/pronosticos'){
+        if(isset($variables['url']) and is_object($variables['url'])){
+            $array = explode(";", $variables['url']->toUriString());
+            $variables['url'] = '/pronosticos-y-tipsters/estadisticas-de-pronosticos?'.$array[1];
+        }
+    }
+}
+
+
+function aytolanaja_views_pre_render(ViewExecutable $view) {
+  if ($view->id() == 'listado_pronosticos' && $view->current_display == 'attachment_1' && count($view->result) === 0) {
+    $view->display_handler->setOption('css_class', 'none');
+  }
+}
