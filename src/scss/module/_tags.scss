@@ -1,7 +1,7 @@
 @import "_recipes";
 @import "_variables";
 
-.field--name-field-tags{
+.field--name-field-tags, .field--name-field-categorias{
 	font-size: 0;
 	padding-bottom: 30px;
 	.field__item{
@@ -25,5 +25,13 @@
 	}
 	.field__item:nth-child(5n+5){
 		font-size: 24px;
+	}
+}
+
+.field--name-field-categorias{
+	.field__item{
+		a{
+			&:before{content:none;}
+		}
 	}
 }

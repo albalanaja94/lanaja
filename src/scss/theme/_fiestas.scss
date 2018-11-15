@@ -65,3 +65,141 @@
     }
   }
 }
+
+.node--type-fiestas{
+  &.node--view-mode-full{
+    .breadcrumb{padding-left: 0;}
+    > .group-left {
+      > div.group-left{
+        position: relative;
+        &:before{
+          content:'';
+          background-image: url('../images/fuegos.gif');
+          background-repeat: no-repeat;
+          width: 500px;
+          height: 500px;
+          position: absolute;
+          background-size: 400px;
+          opacity: 0.4;
+        }
+      }
+      iframe{
+        width:100%;
+        height:420px;
+      }
+    }
+    .field--name-field-galeria{
+      max-width: $maxWidth;
+      margin: 0 auto;
+      > .field__items{
+        font-size: 0;
+        > .field__item{
+          font-size: 14px;
+          display: inline-block;
+          vertical-align: top;
+          width: 33.33%;
+          position: relative;
+          .field--name-node-title{
+            h2{
+              font-weight: normal;
+              margin:0;
+            }
+            a{
+              color: $white;
+              font-family: $semibold;
+              text-decoration: none;
+              position: absolute;
+              background-color: $corporativoSecundario;
+              bottom: 70px;
+              left: 40px;
+              right: 40px;
+              height: 80px;
+              display: inline-block !important;
+              width: auto !important;
+              text-align: center;
+              padding:15px;
+              box-sizing: border-box;
+              transition: all 0.3s ease-in-out;
+              &:hover{
+                height:120px;
+              }
+            }
+          }
+          .field__item{
+            display: block;
+            width:100%;
+          }
+        }
+      }
+    }
+    .field--name-field-post-relacionados{
+      background-color: $corporativoPrincipal;
+      padding:40px;
+      margin-bottom: -30px;
+      .field__label{
+        @include title();
+        color: $white;
+        text-align: center;
+        max-width: $maxWidth;
+        margin:0 auto;
+        &:after{
+          background-color: $corporativoSecundario;
+        }
+      }
+      > .field__items{
+        max-width: $maxWidth;
+        margin:0 auto;
+        font-size: 0;
+        .field__item{
+          display: inline-block;
+          vertical-align: top;
+          width:25%;
+          font-size: 14px;
+          padding: 0 15px;
+          .field__item{
+            display: block;
+            width:100%;
+            padding:0;
+          }
+          .field--name-field-image{
+            a{
+              max-width:260px;
+              max-height: 260px;
+              overflow: hidden;
+              img{
+                border-radius: 100%;
+                max-width: 260px;
+                margin:0 auto;
+                transition: all 0.5s ease-in-out;
+              }
+              &:hover{
+                img{
+                  transform:scale(0.9);
+                }
+              }
+            }
+          }
+          .field--name-node-title{
+            h2{
+              margin:0;
+              padding:20px;
+              font-weight: normal;
+              text-align: center;
+              a{
+                color: $white;
+                text-decoration: none;
+                font-family: $titular;
+                font-size: 24px;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                  color: $corporativoSecundario;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

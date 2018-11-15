@@ -63,6 +63,7 @@ header {
             display: none;
             position: absolute;
             // display: block;
+            z-index: 9;
             @include rgba-fallback(bg, $blue, 0.85);
             left: 0;
             right: 0;

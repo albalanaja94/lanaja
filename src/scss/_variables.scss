@@ -43,6 +43,7 @@ $maxWidth: 1060px;
   @include font-face('barlow-semibold', '../fonts/barlow-semibold/barlow-semibold', $file-formats: eot woff2 woff);
   @include font-face('barlow-regular', '../fonts/barlow-regular/barlow-regular', $file-formats: eot woff2 woff);
   @include font-face('barlow-italic', '../fonts/barlow-italic/barlow-italic', $file-formats: eot woff2 woff);
+  @include font-face('blackfat', '../fonts/blackfat/blackfat', $file-formats: eot woff2 woff);
   @include font-face('icomoon', '../fonts/icomoon/icomoon', $file-formats: eot woff);
  
   $bold: 'barlow-bold', Arial, sans-serif;
@@ -50,4 +51,5 @@ $maxWidth: 1060px;
   $semibold: 'barlow-semibold', Arial, sans-serif;
   $regular: 'barlow-regular', Arial, sans-serif;
   $light: 'barlow-light', Arial, sans-serif;
+  $titular: 'blackfat', Arial, sans-serif;
   $icomoon: 'icomoon', Arial, sans-serif;

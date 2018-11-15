@@ -1,7 +1,7 @@
 @import "_recipes";
 @import "_variables";
 
-.field--name-field-fecha, .field--name-node-changed-date{
+.field--name-field-fecha, .field--name-node-changed-date, .field--name-field-fechas{
 	@include date();
 	display: inline-block;
 	vertical-align: middle;

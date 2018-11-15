@@ -1,0 +1,36 @@
+@import "_recipes";
+@import "_variables";
+
+.field--name-field-banners{
+	.field__item{
+		margin: 40px 0;
+	}
+}
+
+.paragraph--type-banner-full{
+	position: relative;
+	.field--name-field-titulo{
+		color:$white;
+		font-family: $titular;
+		position: absolute;
+		top: 50%; left:50%;
+		transform:translateX(-50%)translateY(-50%);
+    	z-index: 9;
+	    font-size: 80px;
+	    text-align: center;
+	    max-width: 1024px;
+	    margin:0;
+	}
+	.field--name-field-link{
+		a{
+			font-size: 0;
+			position: absolute;
+			top: 0; left:0; right:0; bottom:40px;
+			@include rgba-fallback(bg, $black, 0.6);
+			transition: all 0.5s ease-in-out;
+			&:hover{
+				@include rgba-fallback(bg, $black, 0.2);
+			}
+		}
+	}
+}
