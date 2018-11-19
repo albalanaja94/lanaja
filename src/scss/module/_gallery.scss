@@ -42,11 +42,12 @@
       }
     }
   }
-  .more-link{
-  	max-width: $maxWidth;
-  	margin: 0 auto;
-  	text-align: right;
-  	padding: 0 20px;
+
+  .more-link {
+    max-width: $maxWidth;
+    margin: 0 auto;
+    text-align: right;
+    padding: 0 20px;
   }
 }
 
@@ -56,4 +57,66 @@
     @include title();
     font-size: 32px;
   }
+}
+
+.node--type-galeria.node--view-mode-related {
+  position: relative;
+  .field--name-field-multimedia{
+  	padding:0;
+  	.field__item{
+  		padding:0;
+  	}
+  }
+  .field--name-field-media-image {
+  	a{
+  		pointer-events: none;
+  	}
+  }
+  .field--name-node-title {
+    h2 {
+      font-weight: normal;
+      margin: 0;
+    }
+
+    a {
+      color: $white;
+      font-family: $semibold;
+      text-decoration: none;
+      position: absolute;
+      background-color: $corporativoSecundario;
+      bottom: 50px;
+      left: 0;
+      right: 0;
+      height: 80px;
+      display: inline-block !important;
+      width: auto !important;
+      text-align: center;
+      padding: 15px;
+      box-sizing: border-box;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        height: 120px;
+      }
+    }
+  }
+
+  .field__item {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+.view-listado-galerias{
+	.view-content{
+		font-size: 	0;
+		.views-row{
+			font-size: 	16px;
+			width:41%;
+			margin: 0 9% 0 0;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
 }

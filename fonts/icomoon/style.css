@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?k534a8');
-  src:  url('fonts/icomoon.eot?k534a8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?k534a8') format('truetype'),
-    url('fonts/icomoon.woff?k534a8') format('woff'),
-    url('fonts/icomoon.svg?k534a8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?2w5bpv');
+  src:  url('fonts/icomoon.eot?2w5bpv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2w5bpv') format('truetype'),
+    url('fonts/icomoon.woff?2w5bpv') format('woff'),
+    url('fonts/icomoon.svg?2w5bpv#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-phone:before {
+  content: "\e910";
+}
 .icon-envelope:before {
   content: "\e90e";
 }
@@ -87,21 +90,6 @@
 .icon-menu:before {
   content: "\e900";
 }
-.icon-keyboard_arrow_right:before {
-  content: "\e902";
-}
-.icon-keyboard_arrow_left:before {
-  content: "\e903";
-}
-.icon-keyboard_arrow_down:before {
-  content: "\e904";
-}
-.icon-arrow_drop_up:before {
-  content: "\e905";
-}
-.icon-arrow_drop_down:before {
-  content: "\e906";
-}
 .icon-keyboard_arrow_up:before {
   content: "\e901";
 }
@@ -119,6 +107,9 @@
 }
 .icon-arrow_drop_down:before {
   content: "\e906";
+}
+.icon-home:before {
+  content: "\e90f";
 }
 .icon-youtube:before {
   content: "\e907";

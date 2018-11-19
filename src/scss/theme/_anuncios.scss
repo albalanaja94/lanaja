@@ -54,3 +54,57 @@
     margin-bottom: 20px;
   }
 }
+
+
+.field--name-field-direccion, .field--name-field-email, .field--name-field-telefono{
+  font-family: $regular;
+  color: $black;
+  font-size: 16px;
+  margin-bottom: 10px;
+  > .field__item{
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+    &:after{
+      content:'-';
+      padding-left: 3px;
+    }
+  }
+  > .field__item:last-child{
+    &:after{content:none;}
+  }
+  a{
+    font-family: $regular;
+    color: $black;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &:before{
+    content:' ';
+    @include icomoon(18px);
+    color: $corporativoPrincipal;
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.field--name-field-direccion{
+  &:before{
+    content: "\e90f";
+  }
+}
+
+.field--name-field-email{
+  &:before{
+    content: "\e90e";
+  }
+}
+
+.field--name-field-telefono{
+  &:before{
+    content: "\e910";
+  }
+}

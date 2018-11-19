@@ -1,6 +1,44 @@
 @import "_recipes";
 @import "_variables";
 
+
+.field--name-field-facebook, .field--name-field-twitter{
+  margin-bottom: 20px;
+  display: inline-block; 
+  vertical-align: top;
+  margin-right: 5px;
+  a{
+    font-size: 0;
+    color: transparent;
+    text-decoration: none;
+    display: block;
+    &:before { 
+      content: "\e90c";
+      transition: all 0.5s ease-in-out;
+      @include icomoon(20px);
+      background-color: $corporativoPrincipal;
+      color: $white;
+      padding: 8px;
+      border-radius: 5px;
+      display: block;
+      margin-bottom: 15px;
+    }
+    &:hover{
+      &:before{
+        background-color: $corporativoSecundario;
+      }
+    }
+  }
+}
+
+.field--name-field-twitter{
+  a{
+    &:before{
+       content: "\e90a";
+    }
+  }
+}
+
 .menu--social-networks {
   margin-top: 15px;
   ul {
