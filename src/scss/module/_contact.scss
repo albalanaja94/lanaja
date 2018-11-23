@@ -1,0 +1,51 @@
+@import "_recipes";
+@import "_variables";
+
+.path-contact{
+	.block-system-main-block{
+		max-width: $maxWidth;
+		margin:0 auto;
+		font-size: 0;
+		&:before{
+			content:'';
+			display: inline-block;
+			width: 49%;
+			margin-right: 1%;
+			vertical-align: top;
+		    height: 466px;
+		    background-image: url('../images/mapa.png');
+		    margin-top: 30px;
+		    background-position: center;
+		}
+	}
+	.contact-form{
+		display: inline-block;
+		width: 49%;
+		margin-left: 1%;
+		vertical-align: top;
+		font-size: 14px;
+		@include rgba-fallback(bg, $corporativoSecundario, 0.3);
+		box-sizing: border-box;
+		padding:10px 20px 20px;
+		margin-top: 30px;
+		label{
+			font-family: $regular;
+			color: $corporativoSecundario;
+			display: block;
+			padding-bottom: 5px;
+			&:after{
+				color: $corporativoSecundario;
+				background-image: none;
+				content: '*';
+				vertical-align: top;
+			}
+		}
+	}
+}
+
+input[type='text'], textarea, input[type='email']{
+	width:100%;
+	border:0;
+	font-family: $regular;
+	padding:3px;
+}

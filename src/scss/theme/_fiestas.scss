@@ -7,7 +7,17 @@
   >.field__item {
     position: relative;
     line-height: 0;
-
+    img{
+      @media all and (max-width: 1024px) {
+        width:100%;
+        object-fit: cover;
+      }
+    }
+    .field--name-field-categorias{
+      @media all and (max-width: 480px) {
+        display: none;
+      }
+    }
     .text {
       position: absolute;
       @include rgba-fallback(bg, $corporativoPrincipal, 0.9);
@@ -20,7 +30,14 @@
       color: $white;
       font-family: $regular;
       font-size: 18px;
-
+      @media all and (max-width: 1024px) {
+      left:50%;
+    }
+    @media all and (max-width: 480px) {
+      left:auto;
+      position: relative;
+      margin-bottom: 20px;
+    }
       h2 {
         font-family: $semibold;
         text-transform: uppercase;
@@ -203,3 +220,44 @@
   }
 }
 
+.node--type-fiestas{
+  &.node--view-mode-related{
+    position: relative;
+    margin-bottom: 30px;
+    img{
+      width:100%;
+    }
+    .field--name-node-title{
+      cursor:pointer;
+      &:before{
+        content:'';
+        position: absolute;
+        top:0;
+        bottom: 4px;
+        left:0;
+        right: 0;
+        @include rgba-fallback(bg, $black, 0.4);
+        transition: all 0.5s ease-in-out;
+      }
+      h2{
+        margin:0;
+        font-weight: normal;
+        a{
+          position: absolute;
+          font-family: $titular;
+          color:$white;
+          top:50%;
+          left:50%;
+          transform:translateX(-50%)translateY(-50%);
+          text-decoration: none;
+          font-size: 52px;
+        }
+      }
+      &:hover{
+        &:before{
+          @include rgba-fallback(bg, $black, 1);
+        }
+      }
+    }
+  }
+}

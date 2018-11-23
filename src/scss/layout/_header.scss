@@ -1,6 +1,13 @@
 @import "_recipes";
 @import "_variables";
 
+
+header{
+   @media all and (max-width: 1260px) {
+    padding: 0 15px;
+    box-sizing: border-box;
+   }
+}
 .region-header-bottom {
   @include rgba-fallback(bg, $blue, 0.85);
 }
@@ -19,8 +26,22 @@
     vertical-align: middle;
     font-size: 12px;
 
+    @media all and (max-width: 1260px) {
+      width: 30%;
+    }
+    .site-logo{
+      img{
+        @media all and (max-width: 768px) {
+          height:80px; width:auto;
+        }
+      }
+    }
     &.region-header-top-two {
       text-align: right;
+
+      @media all and (max-width: 1260px) {
+        width: 70%;
+      }
     }
   }
 }

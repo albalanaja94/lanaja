@@ -11,6 +11,7 @@
   border: 2px solid $white;
   display: none;
   cursor:pointer;
+  z-index: 99;
   &:before {
     content: "\e901";
     @include icomoon(40px);

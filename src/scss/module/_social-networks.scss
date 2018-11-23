@@ -51,12 +51,18 @@
       display: inline-block;
       vertical-align: middle;
       padding: 0 8px;
-
+      @media all and (max-width: 768px) {
+        padding:0 6px;
+      }
       a {
         font-size: 0;
         color: transparent;
         text-decoration: none;
         display: block;
+        @media all and (max-width: 768px) {
+          height:36px;
+          padding-bottom: 10px;
+        }
         &:before {
         	transition: all 0.5s ease-in-out;
           @include icomoon(20px);

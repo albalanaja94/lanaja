@@ -13,11 +13,16 @@
   background: none;
   border: none;
   outline: none;
-
+  @media all and (max-width: 768px) {
+    width:70px; height: 70px;
+  }
   &:before {
     content: "\e903";
     @include icomoon(100px);
     color: $white;
+    @media all and (max-width: 768px) {
+      font-size: 70px;
+    }
   }
 }
 
@@ -32,11 +37,16 @@
   background: none;
   border: none;
   outline: none;
-
+  @media all and (max-width: 768px) {
+    width:70px; height: 70px;
+  }
   &:before {
     content: "\e902";
     @include icomoon(100px);
     color: $white;
+     @media all and (max-width: 768px) {
+      font-size: 70px;
+    }
   }
 }
 
@@ -49,23 +59,40 @@
     transform: translateY(-50%);
     left: 0;
     right: 0;
-
+    @media all and (max-width: 380px) {
+      display: none;
+    }
     >* {
       max-width: $maxWidth;
       width: 100%;
       margin: 0 auto;
       color: $white;
       font-size: 20px;
-
+      @media all and (max-width: 1260px){
+        padding: 0 90px;
+        box-sizing: border-box;
+      }
       &.field--name-field-titulo {
         font-family: $bold;
         font-size: 70px;
         margin-bottom: 15px;
+        @media all and (max-width: 1024px) {
+          font-size:  60px;
+        }
+        @media all and (max-width: 768px) {
+          font-size:  50px;
+        }
       }
 
       &.field--name-field-subtitulo {
         font-family: $regular;
         font-size: 40px;
+        @media all and (max-width: 1024px) {
+          font-size:  30px;
+        }
+        @media all and (max-width: 768px) {
+          font-size:  22px;
+        }
       }
     }
   }
@@ -86,5 +113,22 @@
 
   img {
     width: 100%;
+    height: auto;
+  }
+}
+
+.slick[id*='cabecera-full']{
+  img{
+    @media all and (max-width: 1024px) {
+        height:400px;
+        object-fit: cover;
+    }
+  }
+}
+
+.slick[id*='tablon-de-anuncios-full']{
+  img{
+    height:400px;
+    object-fit: cover;
   }
 }

@@ -1,48 +1,76 @@
 @import "_recipes";
 @import "_variables";
 
-.menu--links-top{
-	text-align: right;
-	ul{
-		padding:0;
-		margin:0;
-		max-width: 530px;
-		font-size: 0;
-		li{
-			display: inline-block;
-			vertical-align: middle;
-			width:45%;
-			box-sizing:border-box;
-			padding: 0px 7px;
-			a{
-				color: $white;
-				background-color: $corporativoSecundario;
-				font-size: 20px;
-				text-decoration: none;
-				display: block;
-				width:100%;
-				text-align: right;
-				box-sizing:border-box;
-				padding:10px;
-				font-family: $regular;
-				background-image:url('../images/icon.png');
-				background-repeat: no-repeat;
-				background-position: center left;
-		    background-position: center left 10px;
-    		background-size: 28px;
-    		transition: all 0.5s ease-in-out;
-    		&:hover{
-    			opacity:0.8;
-    		}
-			}
-		}
-		li:last-child{
-			width:55%;
-			a{
-    		padding-left: 45px;
-				background-color: $blue;
-				background-image:url('../images/nube-y-sol.png');
-			}
-		}
-	}
+.menu--links-top {
+  text-align: right;
+  @media all and (max-width: 640px) {
+  	display: none;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    max-width: 530px;
+    font-size: 0;
+
+    @media all and (max-width: 1260px) {
+      max-width: 100%;
+      text-align: right;
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      width: 45%;
+      box-sizing: border-box;
+      padding: 0px 7px;
+
+      @media all and (max-width: 1260px) {
+        width: auto;
+      }
+
+      a {
+        color: $white;
+        background-color: $corporativoSecundario;
+        font-size: 20px;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        text-align: right;
+        box-sizing: border-box;
+        padding: 10px;
+        font-family: $regular;
+        background-image: url('../images/icon.png');
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-position: center left 10px;
+        background-size: 28px;
+        transition: all 0.5s ease-in-out;
+         @media all and (max-width: 1260px) {
+        padding-left: 45px;
+      }
+       @media all and (max-width: 768px) {
+       		font-size: 16px;
+       		background-size: 20px;
+       		padding:5px 5px 5px 40px;
+       }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    li:last-child {
+      width: 55%;
+
+      @media all and (max-width: 1260px) {
+        width: auto;
+      }
+
+      a {
+        padding-left: 45px;
+        background-color: $blue;
+        background-image: url('../images/nube-y-sol.png');
+      }
+    }
+  }
 }

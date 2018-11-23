@@ -20,7 +20,16 @@
       max-width: 50%;
       width: 100%;
       box-sizing: border-box;
-      padding: 40px 30px;
+      padding: 40px 80px 40px 30px;
+
+      @media all and (max-width: 640px) {
+        top: auto;
+        bottom: 0;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+      }
 
       h2 {
         a {
@@ -30,59 +39,99 @@
           color: $white;
           font-size: 48px;
           line-height: 1.1em;
+
+          @media all and (max-width: 1260px) {
+            font-size: 32px;
+          }
+
+          @media all and (max-width: 1024px) {
+            font-size: 28px;
+          }
         }
       }
+
       .field--name-body {
-      	p{
-      		font-family: $regular;
-      		color: $white;
-      		font-size: 24px;
-      		line-height: 1.3em;
-      	}
+        p {
+          font-family: $regular;
+          color: $white;
+          font-size: 24px;
+          line-height: 1.3em;
+
+          @media all and (max-width: 1260px) {
+            font-size: 20px;
+          }
+
+          @media all and (max-width: 1024px) {
+            font-size: 18px;
+          }
+        }
+
+        @media all and (max-width: 640px) {
+          display: none;
+        }
       }
     }
   }
 }
 
 .anuncios-title {
-	margin-bottom: 100px;
+  margin-bottom: 100px;
+
+  @media all and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+
   h3 {
     text-align: center;
     font-family: $bold;
     font-size: 36px;
     margin-top: 40px;
     margin-bottom: 20px;
+
+    @media all and (max-width: 640px) {
+      font-size: 28px;
+    }
   }
 }
 
 
-.field--name-field-direccion, .field--name-field-email, .field--name-field-telefono{
+.field--name-field-direccion,
+.field--name-field-email,
+.field--name-field-telefono {
   font-family: $regular;
   color: $black;
   font-size: 16px;
   margin-bottom: 10px;
-  > .field__item{
+
+  >.field__item {
     display: inline-block;
     vertical-align: middle;
     letter-spacing: 0.5px;
-    &:after{
-      content:'-';
+
+    &:after {
+      content: '-';
       padding-left: 3px;
     }
   }
-  > .field__item:last-child{
-    &:after{content:none;}
+
+  >.field__item:last-child {
+    &:after {
+      content: none;
+    }
   }
-  a{
+
+  a {
     font-family: $regular;
     color: $black;
     text-decoration: none;
-    &:hover{
+
+    &:hover {
       text-decoration: underline;
     }
   }
-  &:before{
-    content:' ';
+
+  &:before {
+    content: ' ';
     @include icomoon(18px);
     color: $corporativoPrincipal;
     padding-right: 10px;
@@ -91,20 +140,20 @@
   }
 }
 
-.field--name-field-direccion{
-  &:before{
+.field--name-field-direccion {
+  &:before {
     content: "\e90f";
   }
 }
 
-.field--name-field-email{
-  &:before{
+.field--name-field-email {
+  &:before {
     content: "\e90e";
   }
 }
 
-.field--name-field-telefono{
-  &:before{
+.field--name-field-telefono {
+  &:before {
     content: "\e910";
   }
 }

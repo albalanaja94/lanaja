@@ -13,17 +13,31 @@ main{overflow: hidden;}
 		margin:0 auto;
 		font-size: 0;
 		padding: 70px 0;
+		@media all and (max-width: 1024px) {
+			padding: 70px 20px 70px;
+			box-sizing: border-box;
+		}
 		> div{
 			display: inline-block;
 			vertical-align: top;
 			font-size: 12px;
+			 @media all and (max-width: 768px) {
+			    display: block;
+			  }
 			&.fiestas{
 				width:73%;
 				padding-right: 35px;
 				box-sizing:border-box;
+				@media all and (max-width: 768px) {
+			    width:100%;
+			    padding-right: 0;
+			  }
 			}
 			&.sugerencias{
 				width:27%;
+				@media all and (max-width: 768px) {
+			    display: none;
+			  }
 			}
 		}
 	}
