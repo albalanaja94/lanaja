@@ -18,7 +18,6 @@
         if ($(window).width() < 769) {
             $('header .menu--main > ul').css('display', 'none');
           $('header .menu--main .contextual').once().click(function() {
-            console.log('soy holi');
             $('header .menu--main > ul').slideToggle();
           });
         }else if ($(window).width() > 768){

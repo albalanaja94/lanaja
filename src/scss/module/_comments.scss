@@ -1,36 +1,67 @@
 @import "_recipes";
 @import "_variables";
 
-.field--name-comment{
-	max-width: $maxWidth;
-	margin: 0 auto 50px;
-	padding: 20px 30px;
-	h2{
-		@include title();
-		margin-top: 0;
-		padding-top: 0;
-	}	
-	form.comment-form{
-		border-radius: 20px;
-		padding: 10px 20px;
-		font-family: $regular;
-		@include rgba-fallback(bg, $corporativoPrincipal, 0.4);
-	}
-	input[type='text']{
-		outline:none;
-		background-color: transparent;
-		color: $black;
-	    border: 0;
-	    border-bottom: 1px solid rgba(44, 44, 44, 0.55);
-	    margin-left: 10px;
-	    font-family: $regular;
-	}
-	label{
-		font-family: $bold;
-	}
-	.form-textarea-wrapper{margin-top: 5px;}
-	.filter-help{display: none;}
+.field--name-comment {
+  max-width: $maxWidth;
+  margin: 0 auto 50px;
+  padding: 20px 30px;
+   @media all and (max-width: 480px) {
+    padding:20px 15px;
+  }
+  h2 {
+    @include title();
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  form.comment-form {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: $regular;
+    @include rgba-fallback(bg, $corporativoPrincipal, 0.4);
+  }
+
+  input[type='text'] {
+    outline: none;
+    background-color: transparent;
+    color: $black;
+    border: 0;
+    border-bottom: 1px solid rgba(44, 44, 44, 0.55);
+    font-family: $regular;
+  }
+
+  label {
+    font-family: $bold;
+  }
+
+  .form-textarea-wrapper {
+    margin-top: 5px;
+  }
+
+  .filter-help {
+    display: none;
+  }
 }
-.button{
-	@include buttonOne();
+
+.button {
+  @include buttonOne();
+
+  &[value*='Preview'] {
+    display: none;
+  }
+}
+
+.field--type-comment {
+  .comment--view-mode-default {
+  	padding:10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $corporativoPrincipal;
+    margin-bottom: 20px;
+    .field--name-comment-post-date{
+    	@include date();
+    }
+    & + h2.title{
+    	margin-top: 60px;
+    }
+  }
 }

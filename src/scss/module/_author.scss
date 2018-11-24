@@ -7,6 +7,14 @@
 	padding-left: 10px;
 	border-left: 1px solid $corporativoSecundario;
 	margin-left: 10px;
+	@media all and (max-width: 380px) {
+		display: block;
+	    vertical-align: middle;
+	    padding-left: 0;
+	    border-left: 0;
+	    margin-left: 0;
+	    margin-top: 5px;
+	}
 	.field__label{
 		@include body();
 		@include bold();

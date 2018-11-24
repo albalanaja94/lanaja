@@ -45,11 +45,27 @@ main{overflow: hidden;}
 
 //* ************** OTHER CONTENT TYPES (NEWS, BLOG ETC) *** */
 .node.node--view-mode-full:not(.node--type-cover){
-	.group-header{
+    .field--name-field-anuncio{
+      @media all and (max-width: 768px) {
+      	display: none;
+      }
+    }
+  	.group-header{
 		img{
 			max-height: 500px;
+			height:500px;
+			width:100%;
 			object-fit: cover;
 			object-position: bottom;
+			@media all and (max-width: 1024px) {
+		    	max-height: 400px;
+		    }
+			@media all and (max-width: 640px) {
+		    	max-height: 300px;
+		    }
+		    @media all and (max-width: 380px) {
+		    	max-height: 230px;
+		    }
 		}
 	}
 	> .group-left{
@@ -65,11 +81,26 @@ main{overflow: hidden;}
 			vertical-align: top;
 			width: 75%;
 			padding-right: 35px;
+			@media all and (max-width: 768px) {
+				display: block;
+				width:100%;
+				padding:0;
+				margin-bottom: 40px;
+			}
 			&.right-content, &.group-right{
 				width:25%;
 				padding-right: 0;
 				padding-left: 35px;
 				padding-top: 48px;
+				@media all and (max-width: 1024px) {
+					padding-left:0;
+				}
+				@media all and (max-width: 768px) {
+					display: block;
+					width:100%;
+					padding:0;
+					margin-bottom: 0;
+				}
 			}
 		}
 	}

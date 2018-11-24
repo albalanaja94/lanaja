@@ -1,0 +1,23 @@
+@import "_recipes";
+@import "_variables";
+
+.field--name-field-archivos {
+	span{
+		background-image: url('../images/pdf.png');
+		padding:10px 30px;
+		transition:all 0.5s ease-in-out;
+		&:hover{
+			background-image: url('../images/pdf-hover.png');
+		}
+		a{
+			text-decoration: none;
+			text-transform: uppercase;
+			font-family: $bold;
+			color: $corporativoSecundario;
+			transition:all 0.5s ease-in-out;
+			&:hover{
+				color: $corporativoPrincipal;
+			}
+		}
+	}
+}

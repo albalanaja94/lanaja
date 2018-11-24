@@ -7,13 +7,16 @@
   max-width: $maxWidth;
   margin: 0 auto;
   padding: 50px 0;
+
   @media all and (max-width: 1260px) {
     padding: 50px 20px;
     box-sizing: border-box;
   }
+
   @media all and (max-width: 640px) {
     padding-bottom: 0;
   }
+
   ul {
     margin: 0;
     padding: 0;
@@ -28,14 +31,16 @@
       vertical-align: top;
       margin-bottom: 20px;
       box-sizing: border-box;
-      img{
+
+      img {
         @media all and (max-width: 1260px) {
-          width:100%;
+          width: 100%;
           height: auto;
         }
       }
+
       @media all and (max-width: 640px) {
-        width:100%;
+        width: 100%;
         padding: 0 !important;
       }
     }
@@ -81,7 +86,11 @@
         min-height: 96px;
         box-sizing: border-box;
         transition: all 0.5s ease-in-out;
-        @media all and (max-width: 1260px) {right:0;}
+
+        @media all and (max-width: 1260px) {
+          right: 0;
+        }
+
         @media all and (max-width: 768px) {
           position: relative;
           bottom: 5px;
@@ -91,9 +100,11 @@
           min-height: auto;
           font-size: 20px;
         }
+
         @media all and (max-width: 640px) {
-          padding:15px;
+          padding: 15px;
         }
+
         &:hover {
           @include rgba-fallback(bg, $corporativoSecundario, 1);
         }
@@ -104,6 +115,7 @@
   &.node--view-mode-full {
     .group-header {
       position: relative;
+
       h2 {
         position: absolute;
         font-size: 60px;
@@ -113,8 +125,23 @@
         padding: 10px 40px 10px 20px;
         font-family: $bold;
         text-transform: uppercase;
+
+        @media all and (max-width: 1024px) {
+          margin: 0;
+          font-size: 50px;
+          left: 60px;
+          bottom: 168px;
+        }
+        @media all and (max-width: 640px) {left:20px; font-size: 40px;}
+        @media all and (max-width: 480px) {
+          bottom: auto;
+          top: 240px;
+        }
+         @media all and (max-width: 380px) {
+          top: 170px;
+        }
       }
     }
-    
+
   }
 }

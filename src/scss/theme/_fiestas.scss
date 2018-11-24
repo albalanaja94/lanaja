@@ -103,6 +103,9 @@
       iframe{
         width:100%;
         height:420px;
+        @media all and (max-width: 480px) {
+          height: 300px;
+        }
       }
     }
     .field--name-field-galeria{
@@ -116,6 +119,14 @@
           vertical-align: top;
           width: 33.33%;
           position: relative;
+          padding: 0 10px;
+          box-sizing: border-box;
+          @media all and (max-width: 640px) {
+            display: block;
+            width: 100%;
+            max-width: 480px;
+            margin:0 auto;
+          }
           .field--name-node-title{
             h2{
               font-weight: normal;
@@ -127,9 +138,9 @@
               text-decoration: none;
               position: absolute;
               background-color: $corporativoSecundario;
-              bottom: 70px;
-              left: 40px;
-              right: 40px;
+              bottom: 50px;
+              left: 0;
+              right: 0;
               height: 80px;
               display: inline-block !important;
               width: auto !important;
@@ -173,21 +184,34 @@
           width:25%;
           font-size: 14px;
           padding: 0 15px;
+          box-sizing: border-box;
+           @media all and (max-width: 1024px) {width:33.33%;}
+           @media all and (max-width: 768px) {width:50%; margin-bottom: 20px;}
+           @media all and (max-width: 480px) {width:100%;}
           .field__item{
-            display: block;
+            display: block !important;
             width:100%;
             padding:0;
+            @media all and (max-width: 768px) {
+              margin-bottom: 0;
+            }
           }
           .field--name-field-image{
+            text-align:center;
             a{
               max-width:260px;
               max-height: 260px;
               overflow: hidden;
               img{
                 border-radius: 100%;
-                max-width: 260px;
+                max-width: 235px;
+                height: 235px;
                 margin:0 auto;
                 transition: all 0.5s ease-in-out;
+                 @media all and (max-width: 1024px) {
+                  max-width: 178px;
+                  height:178px;
+                 }
               }
               &:hover{
                 img{
@@ -215,6 +239,10 @@
             }
           }
         }
+        .field__item:last-child{
+          @media all and (max-width: 1024px) {display: none;}
+          @media all and (max-width: 768px) {display: inline-block;}
+        }
       }
     }
   }
@@ -226,6 +254,10 @@
     margin-bottom: 30px;
     img{
       width:100%;
+      @media all and (max-width: 640px) {
+        height: 250px;
+        object-fit: cover;
+      }
     }
     .field--name-node-title{
       cursor:pointer;
@@ -251,6 +283,10 @@
           transform:translateX(-50%)translateY(-50%);
           text-decoration: none;
           font-size: 52px;
+          text-align: center;
+          @media all and (max-width: 480px) {
+            font-size: 40px;
+          }
         }
       }
       &:hover{

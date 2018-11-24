@@ -1,13 +1,6 @@
 @import "_recipes";
 @import "_variables";
 
-
-header{
-   @media all and (max-width: 1260px) {
-    padding: 0 15px;
-    box-sizing: border-box;
-   }
-}
 .region-header-bottom {
   @include rgba-fallback(bg, $blue, 0.85);
 }
@@ -19,7 +12,10 @@ header{
   background-color: $white;
   font-size: 0;
   padding-top: 10px;
-
+   @media all and (max-width: 1260px) {
+    padding: 10px 15px 0;
+    box-sizing: border-box;
+   }
   >div {
     display: inline-block;
     width: 50%;
