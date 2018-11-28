@@ -43,6 +43,7 @@ function aytolanaja_page_attachments_alter(array &$page) {
   ];
   $page['#attached']['html_head'][] = [$ie_edge, 'ie_edge'];*/
   $page['#attached']['drupalSettings']['widthBreakpoint'] = 379;
+  $page['#attached']['library'][] = 'aytolanaja/js';
 }
 
 /**
@@ -171,36 +172,6 @@ function aytolanaja_preprocess_menu_local_task(array &$variables) {
 }
 
 
-/**
- * Implements hook_form_user_login_form_alter().
- */
-function aytolanaja_form_user_login_form_alter(&$form) {
-    $form['new_password'] = array(
-      '#type' => 'markup',
-      '#markup' => '<div class="forget_password"><a href="/user/password" data-drupal-link-system-path="user/password">'.t('Request new password').'</a></div>',
-      '#weight' => +97,
-    );
-    $form['new_account'] = array(
-      '#type' => 'markup',
-      '#markup' => '<div class="new_account"><a href="/user/register" data-drupal-link-system-path="user/register">'.t('Create new account').'</a></div>',
-      '#weight' => +98,
-    );
-    $form['login_with_facebook'] = array(
-        '#type' => 'markup',
-        '#markup' => '<div class="login-facebook"><a href="/user/login/facebook" title="'.t('Login with facebook').'">'.t('Login with facebook').'</a></div>',
-        '#weight' => +94,
-    );
-    $form['login_with_twitter'] = array(
-        '#type' => 'markup',
-        '#markup' => '<div class="login-twitter"><a href="/user/login/twitter"  title="'.t('Login with twitter').'">'.t('Login with twitter').'</a></div>',
-        '#weight' => +95,
-    );
-    $form['login_with_google'] = array(
-        '#type' => 'markup',
-        '#markup' => '<div class="login-google"><a href="/user/login/google"  title="'.t('Login with google').'">'.t('Login with google').'</a></div>',
-        '#weight' => +96,
-    );
-}
 
 function aytolanaja_preprocess_image_formatter(&$variables) {
     $current_path = \Drupal::service('path.current')->getPath();

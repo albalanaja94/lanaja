@@ -13,6 +13,7 @@
 			color: $corporativoPrincipal;
 			font-family: $regular;
 			text-decoration: none;
+			pointer-events: none;
 			&:before{
 				content:'#';
 				color: $corporativoPrincipal;

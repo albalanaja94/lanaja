@@ -5,7 +5,12 @@ base:
       css/style.css: {}
   js:
     js/aytolanaja.js: {}
-    dependencies:
-      - core/jquery
-      - core/drupal
-      - core/jquery.once
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupalSettings
+
+
+

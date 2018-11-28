@@ -1,0 +1,69 @@
+@import "_recipes";
+@import "_variables";
+
+#user-login-form{
+    max-width: 600px;
+    margin: 0 auto;
+    padding:50px 0;
+    input{
+	    box-sizing: border-box;
+	    padding: 7px 12px 6px;
+	    margin: 0.4em 0;
+	    width: 100%;
+	    background: #FFFFFF;
+	    border: 1px solid $corporativoSecundario;
+	    color: #2E2E2E;
+	    resize: none;
+	    font-family: $regular;
+    }
+    label{
+    	font-family: $regular;
+    	color: $corporativoSecundario;
+    }
+    input[type='submit']{
+    	background-color: $corporativoSecundario;
+    	font-family: $bold;
+    	color: $white;
+    	max-width: 300px;
+    	margin:0 auto;
+    }
+    .form-actions{
+    	text-align: center;
+    }
+}
+
+.profile{
+	max-width: $maxWidth;
+	margin: 50px auto;
+	font-family: $regular;
+	h4.label{
+		font-weight: normal;
+		font-family: $bold;
+	}
+}
+
+.user--view-mode-full{
+	max-width: $maxWidth;
+	margin: 50px auto;
+	font-family: $regular;
+	font-size: 16px;
+	h4.label{
+		font-weight: normal;
+		font-family: $bold;
+	}
+	.field--name-user-picture{
+		float:left;
+		padding-right: 20px;
+		img{
+			border-radius: 100%;
+	    	width: 200px;
+    		object-fit: cover;
+    		border:2px solid $corporativoPrincipal;
+		}
+	}
+	.field--name-field-nombre-y-apellidos{
+		font-family: $bold;
+		text-transform: uppercase;
+		font-size: 20px;
+	}
+}

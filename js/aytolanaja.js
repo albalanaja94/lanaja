@@ -1,5 +1,6 @@
-(function($) {
+(function($, Drupal) {
 
+  'use strict';
   //* ********* FUNCION MENU DESKTOP OPEN ITEMS SECOND LEVEL *** */
   Drupal.behaviors.menuDesktop = {
     attach: function(context, settings) {
@@ -17,7 +18,7 @@
       function menumobile() {
         if ($(window).width() < 769) {
             $('header .menu--main > ul').css('display', 'none');
-          $('header .menu--main .contextual').once().click(function() {
+          $('header .menu--main h2').once().click(function() {
             $('header .menu--main > ul').slideToggle();
           });
         }else if ($(window).width() > 768){
@@ -50,4 +51,5 @@
     }
   };
 
-})(jQuery);
+
+})(jQuery, Drupal);

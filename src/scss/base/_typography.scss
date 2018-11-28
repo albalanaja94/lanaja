@@ -73,6 +73,13 @@
 		text-decoration: none;
 		color: $corporativoPrincipal;
 	}
+	img{
+		padding:10px;
+	}
+	h2{
+		font-family: $bold;
+		font-weight: normal;
+	}
 }
 
 p, ul, li, ol{
@@ -115,3 +122,10 @@ h1:not(.list-title){
 	@include title();
 }
 
+.node-50{
+	.sharethis-wrapper{display: none;}
+}
+
+.messages{
+	display: none;
+}

@@ -93,6 +93,11 @@
   .field--name-body a {
     text-decoration: none;
     color: #8c7aae; }
+  .field--name-body img {
+    padding: 10px; }
+  .field--name-body h2 {
+    font-family: "barlow-bold", Arial, sans-serif;
+    font-weight: normal; }
 
 p, ul, li, ol {
   font-family: "barlow-regular", Arial, sans-serif;
@@ -151,6 +156,12 @@ h1:not(.list-title) {
       font-size: 32px;
       margin: 40px 0 35px;
       padding: 0 15px; } }
+
+.node-50 .sharethis-wrapper {
+  display: none; }
+
+.messages {
+  display: none; }
 
 /* ***************************************************** VARIABLES */
 @font-face {
@@ -766,13 +777,17 @@ header .menu--main {
   margin: 0 auto;
   width: 100%; }
   @media all and (max-width: 768px) {
-    header .menu--main .contextual {
-      position: relative;
+    header .menu--main h2 {
+      position: relative !important;
       height: 43px;
-      background-image: url("../images/menu.png");
+      background-image: url(../images/menu.png);
       background-repeat: no-repeat;
-      background-position: right 15px top;
-      cursor: pointer; } }
+      background-position: right 15px center;
+      cursor: pointer;
+      overflow: initial;
+      width: auto;
+      font-size: 0;
+      clip: initial; } }
   header .menu--main > ul {
     display: table;
     width: 100%;
@@ -2541,7 +2556,8 @@ header .menu--main {
       text-decoration: none;
       padding: 3px 10px;
       font-size: 16px;
-      transition: all 0.5s ease-in-out; }
+      transition: all 0.5s ease-in-out;
+      pointer-events: none; }
       .field--name-field-categoria-noticia .field__item a:hover {
         background-color: #8c7aae; }
 
@@ -2643,7 +2659,8 @@ header .menu--main {
     .field--name-field-tags .field__item a, .field--name-field-categorias .field__item a {
       color: #8c7aae;
       font-family: "barlow-regular", Arial, sans-serif;
-      text-decoration: none; }
+      text-decoration: none;
+      pointer-events: none; }
       .field--name-field-tags .field__item a:before, .field--name-field-categorias .field__item a:before {
         content: '#';
         color: #8c7aae;
@@ -3415,6 +3432,148 @@ input[type='text'], textarea, input[type='email'] {
   font-weight: normal;
   src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
 
+#user-login-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 0; }
+  #user-login-form input {
+    box-sizing: border-box;
+    padding: 7px 12px 6px;
+    margin: 0.4em 0;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #2c2c2c;
+    color: #2E2E2E;
+    resize: none;
+    font-family: "barlow-regular", Arial, sans-serif; }
+  #user-login-form label {
+    font-family: "barlow-regular", Arial, sans-serif;
+    color: #2c2c2c; }
+  #user-login-form input[type='submit'] {
+    background-color: #2c2c2c;
+    font-family: "barlow-bold", Arial, sans-serif;
+    color: #FFFFFF;
+    max-width: 300px;
+    margin: 0 auto; }
+  #user-login-form .form-actions {
+    text-align: center; }
+
+.profile {
+  max-width: 1060px;
+  margin: 50px auto;
+  font-family: "barlow-regular", Arial, sans-serif; }
+  .profile h4.label {
+    font-weight: normal;
+    font-family: "barlow-bold", Arial, sans-serif; }
+
+.user--view-mode-full {
+  max-width: 1060px;
+  margin: 50px auto;
+  font-family: "barlow-regular", Arial, sans-serif;
+  font-size: 16px; }
+  .user--view-mode-full h4.label {
+    font-weight: normal;
+    font-family: "barlow-bold", Arial, sans-serif; }
+  .user--view-mode-full .field--name-user-picture {
+    float: left;
+    padding-right: 20px; }
+    .user--view-mode-full .field--name-user-picture img {
+      border-radius: 100%;
+      width: 200px;
+      object-fit: cover;
+      border: 2px solid #8c7aae; }
+  .user--view-mode-full .field--name-field-nombre-y-apellidos {
+    font-family: "barlow-bold", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px; }
+
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "blackfat";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/blackfat/blackfat.eot?#iefix") format("embedded-opentype"), url("../fonts/blackfat/blackfat.woff2") format("woff2"), url("../fonts/blackfat/blackfat.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
+/* @include transparent($colorLink, 0.8); */
+/* ***************************************************** VARIABLES */
+@font-face {
+  font-family: "barlow-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-bold/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold/barlow-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-light/barlow-light.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-light/barlow-light.woff2") format("woff2"), url("../fonts/barlow-light/barlow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-semibold/barlow-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-semibold/barlow-semibold.woff2") format("woff2"), url("../fonts/barlow-semibold/barlow-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-regular/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular/barlow-regular.woff2") format("woff2"), url("../fonts/barlow-regular/barlow-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "barlow-italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/barlow-italic/barlow-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-italic/barlow-italic.woff2") format("woff2"), url("../fonts/barlow-italic/barlow-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "blackfat";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/blackfat/blackfat.eot?#iefix") format("embedded-opentype"), url("../fonts/blackfat/blackfat.woff2") format("woff2"), url("../fonts/blackfat/blackfat.woff") format("woff"); }
+
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"); }
+
 /* ************* TIPO DE CONTENIDO FIESTAS */
 .field--name-field-fiestas > .field__item {
   position: relative;
@@ -3577,7 +3736,8 @@ input[type='text'], textarea, input[type='email'] {
   .node--type-fiestas.node--view-mode-full .field--name-field-post-relacionados > .field__items {
     max-width: 1060px;
     margin: 0 auto;
-    font-size: 0; }
+    font-size: 0;
+    text-align: center; }
     .node--type-fiestas.node--view-mode-full .field--name-field-post-relacionados > .field__items .field__item {
       display: inline-block;
       vertical-align: top;

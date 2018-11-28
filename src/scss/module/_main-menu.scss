@@ -6,14 +6,18 @@ header {
     max-width: $maxWidth;
     margin: 0 auto;
     width: 100%;
-    .contextual{
+    h2{
        @media all and (max-width: 768px) {
-        position: relative;
-        height:43px;
-        background-image: url('../images/menu.png');
-        background-repeat: no-repeat;
-        background-position: right 15px top;
-        cursor: pointer;
+          position: relative !important;
+          height: 43px;
+          background-image: url(../images/menu.png);
+          background-repeat: no-repeat;
+          background-position: right 15px center;
+          cursor: pointer;
+          overflow: initial;
+          width: auto;
+          font-size: 0;
+          clip: initial;
        }
     }
     >ul {
